@@ -1,0 +1,426 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'foglightenno07.regular';
+    src: url('../fonts/foglihtenno07.regular.ttf');
+
+    
+    
+}
+.heebo_font{
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 14px;
+  font-style: normal;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+   font-family: "Heebo", sans-serif;
+}
+ 
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      background-color:rgb(238, 238, 238);
+      height: 60px;
+      position: fixed;
+      width: 100%;
+}
+
+#logo{
+width: 10vw;}
+
+#loc{
+   
+ color: #FFFFFF;
+    font-size: 15px;
+    font-weight: normal;
+    width: 220px;
+    height: 30px;
+    background-color: #B09C6D;
+    margin-top: 3px;
+    padding-top: 15px;
+    border-radius: 20px;
+    text-align: center;
+   font-weight: 500px;
+   margin-left: 12px;
+}
+
+
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+    justify-content: space-between;
+    width: 50vw;
+}
+
+
+
+svg{
+ 
+    color: black;
+      height: 60%;
+    width: 20px;
+}
+
+#icons{
+    display: flex;
+    align-items: center;  
+    padding-right: 50px;
+    gap: 20px;
+    width: 100px;
+}
+
+@media(max-width:600px) {
+
+    #icons{
+        flex-wrap: wrap;
+    }
+}
+#big_img{
+     height: 295px;
+     width:98vw; 
+   background-image: url("https://layers.pk/wp-content/uploads/2021/12/Title-4.jpg");
+   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+
+
+}
+.font{
+    
+     font-family: 'foglightenno07.regular';
+
+  
+}
+
+#small_img{
+    width: 100%;
+    display: flex;
+    justify-content:center; 
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.block_small img{
+    color: #FFFFFF;
+    margin-right: 10px;  
+     height: 30px;
+     width: 40px;
+   
+   
+}
+.block_small{
+   
+    width: 10vw;
+    
+}
+
+.block_small a{
+display: flex;
+color: #FFFFFF;
+text-decoration: none;
+padding: 5px;
+font-weight: 700;
+
+}
+h1{
+    margin-bottom: 15px;
+
+}
+#cookie{
+    width: 100px;
+    margin-left: 5px;
+}
+#min_donut{
+    width: 12vw;
+}
+.pro{
+    margin-top: 4px;
+     color: #a5a5a5;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#home_hover{
+    display: none;
+    background-color: #FFFFFF;
+    margin-top: 650px;
+    width: 800px;
+
+    position: absolute;
+    
+}
+#anchor:hover + #home_hover{
+    display: block;
+}
+
+#menu_hover{
+    display: none;
+    background-color: #FFFFFF;
+    margin-top: 630px;
+    width: 980px;
+
+    position: absolute;
+    
+}
+#menu_anchor:hover + #menu_hover{
+    display: block;
+}
+
+#menu_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+  
+}
+.cen p:nth-child(2) {
+    color: #B09C6D;
+}
+.cen p:nth-child(1){
+    font-size: larger;
+     font-family: 'foglightenno07.regular';
+     font-weight: 700;
+}
+
+.cen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.layerspan{
+    color: #B09C6D;
+    
+}
+.layerspan{
+   font-family: 'foglightenno07.regular';  
+}
+.color{
+       color: #7a7a7a;
+
+}
+#h1_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 30px;
+
+}
+#h1_div h1{
+    font-size: 35px;
+  
+}
+#h1_menu h1{
+   font-size: 35px;
+   
+}
+
+.anchor{
+    text-decoration: none;
+    color: black;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    
+}
+#h1_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+
+.img_grid img {
+     height: 200px;
+
+    width: 200px;
+
+    padding-bottom: 10px;
+
+
+}
+.img_grid :nth-child(2){
+      font-family: 'foglightenno07.regular';
+      font-size: 22px;
+      font-weight: 700;
+      
+}
+
+.img_grid :nth-child(2) a:hover{
+      font-family: 'foglightenno07.regular';
+      color: #B09C6D;
+    
+
+}
+
+#about_flex{
+    
+    display: flex;
+    gap: 20px;
+ 
+    background-color: #FFFFFF;
+    padding: 55px;
+   padding-left: 40px;
+
+}
+#about_hover{
+    display: none;
+     position: absolute;
+        margin-top: 610px;
+}
+#about_anchor:hover + #about_hover{
+    display: block;
+    
+}
+.mob{
+    width: 490x;
+    height: 400px;
+}
+#mob_p{
+    width: 450px;
+    height: 400px;
+    line-height: 1.5;
+}
+.social_img{
+    width: 150px;
+    height: 150px;
+  
+}
+
+
+#social_flex{
+    display: flex;
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 275px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+#social_display{
+display: none;
+   position:absolute;
+   right:50px;
+     margin-top: 335px;
+}
+#social_anchor:hover + #social_display{
+display: block;
+
+}
+
+
+footer{
+    position: relative;
+}
+#foot{
+   position: absolute;
+    background-image: url(../asserts/imgi_56_Footer.png);
+    height: 150px;
+  box-sizing: border-box;
+  background-repeat:no-repeat;
+  background-size: contain;
+   width:100%;
+   background-size: 1990px;
+   background-position-x: right;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   
+  
+}
+.footimg{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #B09C6D;
+   
+   
+    
+}
+#foot a{
+    text-decoration: underline;
+    font-weight: 500;
+
+}
+#bigImageMenu{
+    color: #FFFFFF;
+    font-size: 54px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+/* nav and footer close */
+
+
+#big_img{
+     height: 400px;
+     width:100vw; 
+   background-image: url("https://layers.pk/wp-content/uploads/2021/12/Title-4.jpg");
+   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+
+
+}
+#firstP{
+    color:#a5a5a5;
+}
+#firstP a{
+    color: white;
+}
+#firstP a:hover{
+    color:#a5a5a5;
+}
+#fantasy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+#weight{
+    font-size:50px;
+    font-weight:800;
+}
+.layerspan{
+    color: #B09C6D;
+      font-family: 'foglightenno07.regular';  
+}
+#heropic{
+    background-image: url(../asserts/Footer.png);
+    width: 90%;
+    height: 100px;}
