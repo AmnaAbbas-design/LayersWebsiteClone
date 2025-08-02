@@ -6,86 +6,153 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu-Layers Bakeshop</title>
   <link rel="stylesheet" href="../css/style.css">
+  
 </head>
 
 <body>   
   <!-- nav start -->
   <nav>
-    <div id="loc">Location</div>
+    <!-- query hamburger -->
+    <div id="myHamburger" class="Noneed" > <svg xmlns="http://www.w3.org/2000/svg" class="hamburger Noneed"  x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+<path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path>
+</svg></div>
+<!-- hamburger end -->
+    <div id="loc" class="nomore">Location</div>
        <!-- home start -->
     <ul class="heebo_font">
       <a href="../html/home.html" id="anchori" class="anchor">
-        <li>Home</li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdUlEQVR4nO3NwQnCAAxG4c9xPAgWoah4sUIpoiJ0MldwIqdQqUsUIR4UtS096ruEJP9L+PPgiJV2ZJF/YoEbtg1yHrnlu+UcFXYf5AJXzL59mOCC/ct8HfJUCxKcUUa/CTnVgXEcOUS9950Z4oSRHgz6yH6EGoCbERduBT22AAAAAElFTkSuQmCC" alt="expand-arrow" class="dropdrop" >
+        <li class="nomore">Home</li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdUlEQVR4nO3NwQnCAAxG4c9xPAgWoah4sUIpoiJ0MldwIqdQqUsUIR4UtS096ruEJP9L+PPgiJV2ZJF/YoEbtg1yHrnlu+UcFXYf5AJXzL59mOCC/ct8HfJUCxKcUUa/CTnVgXEcOUS9950Z4oSRHgz6yH6EGoCbERduBT22AAAAAElFTkSuQmCC" alt="expand-arrow" class="dropdrop" >
       </a>
       <div id="home_hover">
         <div id="h1_div">
-          <h1 class="font"><span class="layerspan">BestSelling </span> Products></h1>
+          <h1 class="font"><span class="layerspan">BestSelling </span> Products</h1>
         </div>
         <div id="grid">
-          <div><img src="../asserts/Lotus-15.jpg" alt="" width="150px" height="150px" class="hmrelative">
-            <!-- hover heart -->
+          <div id="mainHoverHeart">
+          <div><img src="../asserts/Lotus-15.jpg" alt=""  class="homedrop"  id="hmrelative">
+            <!-- hover heart --></div>
+            
         <div id="hoverheart">
-                <div id="heart" class="hm"></div>
-                <div id="magni" class="hm"></div>
-                 <!-- <div id="downCart"></div> -->
+                <div id="heart" class="hm"><img src="../asserts/fav.png" alt=""></div>
+                <div id="magni" class="hm"><img src="../asserts/magniImg.png" alt=""></div>
+                  <div id="downCart" class="hm">Add to cart</div> 
         </div>
-
+    
             <!-- hover hearet end -->
             <div class="cen">
               <p class="font">lotus Cake</p>
               <p>Rs 18,000</p>
             </div>
           </div>
-          <div><img src="../asserts/Belgian-Chocolate-16.jpg" alt="" width="150px" height="150px">
+            <div id="mainHoverHeart">
+          <div><img src="../asserts/Belgian-Chocolate-16.jpg" alt=""  class="homedrop"  id="hmrelative">
+                <!-- hover heart --></div>
+        <div id="hoverheart">
+                <div id="heart" class="hm"><img src="../asserts/fav.png" alt=""></div>
+                <div id="magni" class="hm"><img src="../asserts/magniImg.png" alt=""></div>
+                  <div id="downCart" class="hm">
+                    Add to cart
+                  </div>
+                  
+        </div>
+
+            <!-- hover hearet end -->
             <div class="cen">
               <p class="font">Belgian Malt Cake</p>
               <p>Rs 18,000</p>
             </div>
-          </div>
-          <div><img src="../asserts/ferrero-square-17.jpg" alt="" width="150px" height="150px">
+          </div>  <div id="mainHoverHeart">
+          <div><img src="../asserts/ferrero-square-17.jpg" alt="" class="homedrop" id="hmrelative">
+                <!-- hover heart --></div>
+        <div id="hoverheart">
+                <div id="heart" class="hm"><img src="../asserts/fav.png" alt=""></div>
+                <div id="magni" class="hm"><img src="../asserts/magniImg.png" alt=""></div>
+                  <div id="downCart" class="hm">   Add to cart</div>
+        </div>
+
+            <!-- hover hearet end -->
             <div class="cen">
-              <p class="font">Ferrero Rocher Cake</p>
+              <p class="font" id="ferroCake" >Ferrero Rocher Cake</p>
               <p>Rs 18,000</p>
             </div>
-          </div>
-          <div><img src="../asserts/Ferrero-Classic-18.jpg" alt="" width="150px" height="150px">
+          </div>  <div id="mainHoverHeart">
+          <div><img src="../asserts/Ferrero-Classic-18.jpg" alt="" class="homedrop" id="hmrelative" ></div>
+                <!-- hover heart -->
+        <div id="hoverheart">
+                <div id="heart" class="hm"><img src="../asserts/fav.png" alt=""></div>
+                <div id="magni" class="hm"><img src="../asserts/magniImg.png" alt=""></div>
+                 <div id="downCart" class="hm">   Add to cart</div>
+        </div>
+
+            <!-- hover hearet end -->
             <div class="cen">
               <p class="font">classic Cake</p>
               <p>Rs 18,000</p>
             </div>
-          </div>
-          <div><img src="../asserts/Nutella-19.jpg" alt="" width="150px" height="150px">
+          </div>  <div id="mainHoverHeart">
+          <div><img src="../asserts/Nutella-19.jpg" alt="" class="homedrop" id="hmrelative"></div>
+                <!-- hover heart -->
+        <div id="hoverheart">
+                <div id="heart" class="hm"><img src="../asserts/fav.png" alt=""></div>
+                <div id="magni" class="hm"><img src="../asserts/magniImg.png" alt=""></div>
+                  <div id="downCart" class="hm">   Add to cart</div>
+        </div>
+
+            <!-- hover hearet end -->
             <div class="cen">
               <p class="font">Nutella Cake</p>
               <p>Rs 18,000</p>
             </div>
-          </div>
-          <div><img src="../asserts/Red-Velvet-20.jpg" alt="" width="150px" height="150px">
+          </div>  <div id="mainHoverHeart">
+          <div><img src="../asserts/Red-Velvet-20.jpg" alt="" class="homedrop"  id="hmrelative"></div>
+                <!-- hover heart -->
+        <div id="hoverheart">
+                <div id="heart" class="hm"><img src="../asserts/fav.png" alt=""></div>
+                <div id="magni" class="hm"><img src="../asserts/magniImg.png" alt=""></div>
+                  <div id="downCart" class="hm">   Add to cart</div>
+        </div>
+
+            <!-- hover hearet end -->
             <div class="cen">
               <p class="font">Red Velvet Cake</p>
               <p>Rs 18,000</p>
             </div>
-          </div>
-          <div><img src="../asserts/Chocolate-Heaven-24.jpg" alt="" width="150px" height="150px">
+          </div>  <div id="mainHoverHeart">
+          <div><img src="../asserts/Chocolate-Heaven-24.jpg" alt="" class="homedrop" id="hmrelative"></div>
+                <!-- hover heart -->
+        <div id="hoverheart">
+                <div id="heart" class="hm"><img src="../asserts/fav.png" alt=""></div>
+                <div id="magni" class="hm"><img src="../asserts/magniImg.png" alt=""></div>
+                  <div id="downCart" class="hm">   Add to cart</div> 
+        </div>
+
+            <!-- hover hearet end -->
             <div class="cen">
               <p class="font">Chocolate Heaven Cake</p>
               <p>Rs 18,000</p>
             </div>
           </div>
+  <div id="mainHoverHeart">
+          <div><img src="../asserts/German-Fudge.jpg" alt="" class="homedrop" id="hmrelative"></div>
+                <!-- hover heart -->
+        <div id="hoverheart">
+                <div id="heart" class="hm"><img src="../asserts/fav.png" alt=""></div>
+                <div id="magni" class="hm"><img src="../asserts/magniImg.png" alt=""></div>
+                  <div id="downCart" class="hm">Add to cart</div>
+        </div>
 
-          <div><img src="../asserts/German-Fudge.jpg" alt="" width="150px" height="150px">
+            <!-- hover hearet end -->
             <div class="cen">
               <p class="font">German Fudge Cake</p>
-            </div>
             <p>Rs 18,000</p>
           </div>
         </div>
 
-      </div>
+      </div></div>
 <!--menu  -->
 
       <a href="#" class="anchor" id="menu_anchor">
-        <li>Menu</li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdUlEQVR4nO3NwQnCAAxG4c9xPAgWoah4sUIpoiJ0MldwIqdQqUsUIR4UtS096ruEJP9L+PPgiJV2ZJF/YoEbtg1yHrnlu+UcFXYf5AJXzL59mOCC/ct8HfJUCxKcUUa/CTnVgXEcOUS9950Z4oSRHgz6yH6EGoCbERduBT22AAAAAElFTkSuQmCC" alt="expand-arrow" class="dropdrop" >
+        <li class="nomore">Menu</li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdUlEQVR4nO3NwQnCAAxG4c9xPAgWoah4sUIpoiJ0MldwIqdQqUsUIR4UtS096ruEJP9L+PPgiJV2ZJF/YoEbtg1yHrnlu+UcFXYf5AJXzL59mOCC/ct8HfJUCxKcUUa/CTnVgXEcOUS9950Z4oSRHgz6yH6EGoCbERduBT22AAAAAElFTkSuQmCC" alt="expand-arrow" class="dropdrop" >
       </a>
 
       <div id="menu_hover">
@@ -93,45 +160,45 @@
           <h1 class="font"><span class="layerspan">Product</span> Category</h1>
         </div>
         <div id="menu_grid">
-          <div><img src="../asserts/Lotus-15.jpg" alt="" width="150px" height="150px">
+          <div id="menusmall"><img src="../asserts/Lotus-15.jpg" alt="" width="150px" height="150px">
             <div class="cen">
-              <p>Cakes</p> <br>
+              <p>Cakes</p> 
               <p class="color">26 products</p>
             </div>
           </div>
-          <div><img src="../asserts/Nutella-Brownie-100x100.jpg" alt="" width="150px" height="150px">
+          <div id="menusmall"><img src="../asserts/Nutella-Brownie-100x100.jpg" alt="" width="150px" height="150px">
             <div class="cen">
-              <p>Brownies</p><br>
+              <p>Brownies</p>
               <p class="color">7 products</p>
             </div>
           </div>
-          <div><img src="../asserts/desserts..product.jpg" alt="" width="150px" height="150px">
+          <div id="menusmall"><img src="../asserts/desserts..product.jpg" alt="" width="150px" height="150px">
             <div class="cen">
-              <p>Desserts</p><br>
+              <p>Desserts</p>
               <p class="color">10 products</p>
             </div>
           </div>
-          <div><img src="../asserts/Cupcake-4-100x100.jpg" alt="" width="150px" height="150px">
+          <div id="menusmall"><img src="../asserts/Cupcake-4-100x100.jpg" alt="" width="150px" height="150px">
             <div class="cen">
-              <p>Cupcakes</p><br>
+              <p>Cupcakes</p>
               <p class="color">21 products</p>
             </div>
           </div>
-          <div><img src="../asserts/pro sundae.jpg" alt="" width="150px" height="150px">
+          <div id="menusmall"><img src="../asserts/pro sundae.jpg" alt="" width="150px" height="150px">
             <div class="cen">
               <p>Sundae</p><br>
               <p class="color">9 products</p>
             </div>
           </div>
-          <div><img src="../asserts/product cookied.jpg" width="150px" height="150px">
+          <div id="menusmall"><img src="../asserts/product cookied.jpg" width="150px" height="150px">
             <div class="cen">
-              <p>Cookies</p><br>
+              <p>Cookies</p>
               <p class="color">8 products</p>
             </div>
           </div>
-          <div><img src="../asserts/pro donut.jpg" alt="" width="150px" height="150px">
+          <div id="menusmall"><img src="../asserts/pro donut.jpg" alt="" width="150px" height="150px">
             <div class="cen">
-              <p>Mini Donuts</p><br>
+              <p>Mini Donuts</p>
               <p class="color">22 products</p>
             </div>
           </div>
@@ -143,7 +210,7 @@
       <!-- about us -->
 
       <a href="#" class="anchor" id="about_anchor">
-        <li >About Us</li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdUlEQVR4nO3NwQnCAAxG4c9xPAgWoah4sUIpoiJ0MldwIqdQqUsUIR4UtS096ruEJP9L+PPgiJV2ZJF/YoEbtg1yHrnlu+UcFXYf5AJXzL59mOCC/ct8HfJUCxKcUUa/CTnVgXEcOUS9950Z4oSRHgz6yH6EGoCbERduBT22AAAAAElFTkSuQmCC" alt="expand-arrow" class="dropdrop" >
+        <li class="nomore" >About Us</li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdUlEQVR4nO3NwQnCAAxG4c9xPAgWoah4sUIpoiJ0MldwIqdQqUsUIR4UtS096ruEJP9L+PPgiJV2ZJF/YoEbtg1yHrnlu+UcFXYf5AJXzL59mOCC/ct8HfJUCxKcUUa/CTnVgXEcOUS9950Z4oSRHgz6yH6EGoCbERduBT22AAAAAElFTkSuQmCC" alt="expand-arrow" class="dropdrop" >
       </a>
       <!-- about hover -->
       <div id="about_hover">
@@ -152,7 +219,7 @@
           <div><img src="../asserts/mob 2.jpg" alt="" class="mob"></div>
           <div>
             <h1><span class="layerspan">Layers</span> Bakeshop</h1>
-            <p id="mob_p">Like a fantasy that feels unreal, every delicacy by ‘Layers’ holds a charm that enchants with
+            <p id="mob_p" class="paranew">Like a fantasy that feels unreal, every delicacy by ‘Layers’ holds a charm that enchants with
               every bite, allowing one to be swept into a moment of bliss, making all your dessert creams come true!
               <br> <br>
 
@@ -161,20 +228,15 @@
 
               Since the beginning, Layers has secured an irreplaceable spot in the hearts of people.</p>
           </div>
-
-
         </div>
       </div>
 
-
+<!-- logo -->
       <li><img src="https://layers.pk/wp-content/uploads/2021/10/Layers-Logo.png" alt="" id="logo"></li>
 
-
-
-     
       <!-- socila media div -->
-        <a href="#" class="anchor" id="social_anchor">
-        <li >Social Media</li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdUlEQVR4nO3NwQnCAAxG4c9xPAgWoah4sUIpoiJ0MldwIqdQqUsUIR4UtS096ruEJP9L+PPgiJV2ZJF/YoEbtg1yHrnlu+UcFXYf5AJXzL59mOCC/ct8HfJUCxKcUUa/CTnVgXEcOUS9950Z4oSRHgz6yH6EGoCbERduBT22AAAAAElFTkSuQmCC" alt="expand-arrow" class="dropdrop" >
+        <a href="#" class="anchor" id="social_anchor" class="nomore">
+        <li class="nomore">Social Media</li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdUlEQVR4nO3NwQnCAAxG4c9xPAgWoah4sUIpoiJ0MldwIqdQqUsUIR4UtS096ruEJP9L+PPgiJV2ZJF/YoEbtg1yHrnlu+UcFXYf5AJXzL59mOCC/ct8HfJUCxKcUUa/CTnVgXEcOUS9950Z4oSRHgz6yH6EGoCbERduBT22AAAAAElFTkSuQmCC" alt="expand-arrow" class="dropdrop" >
       </a>
       <div id="social_display">
         <div id="social_flex">
@@ -187,39 +249,39 @@
       </div>
 
       <a href="#" class="anchor">
-        <li>Orders</li>
+        <li class="nomore">Orders</li>
       </a>
       <a href="#" class="anchor">
-        <li>Contact Us</li>
+        <li class="nomore">Contact Us</li>
       </a>
     </ul>
 
     <div id="icons">
 
 
-      <a class="icon" href="#"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-          strokeWidth={1.5} stroke="currentColor" className="size-6">
+      <a class="icon nomore" href="#"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          strokeWidth={1.5} stroke="currentColor" className="size-6" class="nomore">
           <path strokeLinecap="round" strokeLinejoin="round"
             d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
         </svg></a>
 
-      <a class="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-          stroke="currentColor" className="size-6">
+      <a class="icon nomore" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+          stroke="currentColor" className="size-6" class="nomore">
           <path strokeLinecap="round" strokeLinejoin="round"
             d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
         </svg></a>
 
-      <a class="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-          stroke="currentColor" className="size-6">
+      <a class="icon nomore" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+          stroke="currentColor" className="size-6" class="nomore">
           <path strokeLinecap="round" strokeLinejoin="round"
             d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-        </svg> </a>
+        </svg> </a><div class="smallNum " id="smallNumId"><p class="nomore">0</p></div>
 
-      <a class="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+      <a class="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" id="carticon" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
           stroke="currentColor" className="size-6">
           <path strokeLinecap="round" strokeLinejoin="round"
             d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-        </svg></a>
+        </svg></a><div class="smallNum"><p>0</p></div>
 
     </div>
   </nav>
@@ -227,23 +289,60 @@
 <!-- nav end -->
 
 <!-- media query side bar -->
- 
+<div id="mainSideBar" class="Noneed">
+  <div id="blockSideBar">
+  <div id="searchSection"> <input type="search" id="serser" placeholder="Search for products"><svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24"
+          strokeWidth={1.5} stroke="currentColor" className="size-6" id="ser">
+          <path strokeLinecap="round" strokeLinejoin="round"
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg></div>
+   <div class="sideSmall">Home</div>
+    <div class="sideSmall">Menu</div>
+     <div class="sideSmall">About us</div>
+      <div class="sideSmall" id="divDropSocial">Social Media
+             <div class="socialDrop">Facebook</div>
+             <div class="socialDrop">Instagram</div>
+             <div class="socialDrop">youTube</div>
+      </div>
+       <div class="sideSmall">Video Catalogue</div>
+        <div class="sideSmall">Track Order</div>
+         <div class="sideSmall"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+          stroke="currentColor" className="size-6" >
+          <path strokeLinecap="round" strokeLinejoin="round"
+            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+        </svg> Wishlist  </div>
+          <div class="sideSmall"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+          stroke="currentColor" className="size-6" >
+          <path strokeLinecap="round" strokeLinejoin="round"
+            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg>Login / Register</div>
+          <div class="sideSmall"><p class="fog">Archives</p></div>
+            <div class="color">No archives to show</div>
+            <div class="sideSmall"><p class="fog">Categories</p></div>
+            <div class="color">No categories</div>
+
+           </div>
+
+  </div>
+</div>
+
 <!-- media query side bar end -->
   <!-- hero big image -->
   <div id="big_img">
-    <h1 class="font" id="bigImageMenu">Menu</h1>
-
-    <div id="small_img">
-      <div class="block_small">
+   <h1 class="font" id="bigImageMenu">Menu</h1>
+    <div id="ham2div"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/menu--v1.png" alt="menu--v1" class="Noneed" id="ham2"/><h2 id="cato" class="Noneed">Categories</h2></div>
+             
+    <div id="small_img" >
+      <div class="block_small ">
         <a href="#">
-          <img src="https://layers.pk/wp-content/uploads/2020/11/doris-shop-icon-all.svg" alt=""><br><br>
+          <img src="https://layers.pk/wp-content/uploads/2020/11/doris-shop-icon-all.svg" alt="" ><br><br>
           <div class="p_tag">
             <p>All</p>
             <p class="pro">product</p>
           </div>
         </a>
       </div>
-      <div class="block_small">
+      <div class="block_small" >
         <a href="#">
           <img src="../asserts/all brownie.png" alt="">
           <div class="p_tag">
@@ -283,7 +382,7 @@
         </a>
       </div>
 
-      <div class="block_small">
+      <div class="block_small ">
         <a href="#">
           <img src="../asserts/all desert.png" alt="">
           <div class="p_tag">
@@ -293,7 +392,7 @@
         </a>
       </div>
 
-      <div class="block_small" id="min_donut">
+      <div class="block_small " id="min_donut">
         <a href="#">
           <img src="../asserts/Donut-.png" alt="">
           <div class="p_tag">
@@ -303,7 +402,7 @@
         </a>
       </div>
 
-      <div class="block_small">
+      <div class="block_small ">
         <a href="#">
           <img src="../asserts/sundae.png" alt="">
           <div class="p_tag">
@@ -327,11 +426,11 @@
          <li class="h"><a href="../html/home.html">Home</a></li> 
          <li>Menu</li>
         </ul>
-        <div id="shop_show">
-          <span><b>Show</b></span>
-          <span>:</span>
-          <a href="#">12</a>
-          <select name="select" id="selector_show">
+        <div id="shop_show" >
+          <span class="nomore"><b>Show</b></span>
+          <span class="nomore">:</span>
+          <a href="#" class="nomore">12</a>
+          <select name="select" id="selector_show" class="nomore">
 
             <option value="default">Default</option>
             <option value="popularity">Sort by Popularity</option>
@@ -353,160 +452,224 @@
           <option value="kuch">kuch</option>
         </select>
 
-        <input type="text" value="Enter pin code/Zip code" class="pin">
-        <input type="submit" value="APPLY" class="pin" id="apply">
+        <input type="text" value="Enter pin code/Zip code" class="pin nomore">
+        <input type="submit" value="APPLY" class="pin nomore" id="apply">
 
       </div>
       <!-- location section end -->
 
-
       <!-- hero main images start -->
       <div id="hero_grid">
-         <div class="fullimage">
+            <!-- full image -->
+       <div class="fullimage">
          <div class="img_grid">
-           <img src="../asserts/All-Chocolate-Dreamcake-1.jpg" alt="">
-           <div><a href="">ALL Chocolate Dreamcake</a></div>
-           <div class="paragrid" id="cakegrid" >Cakes</div>
-           <div class="paragrid">2.5 LBS</div>
-           <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br><br>
-           <div class="input_block">
-           <div class="rupee">Rs 3100</div><br>
-           <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-           </div><button class="addcart">Add to Cart</button></div>
-               </div></div>
+          <div><img src="../asserts/All-Chocolate-Dreamcake-1.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
+       <!-- BIG HEART -->
+             <div id="hoverheart2">
+                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
+                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
+             </div>   
+       <!-- END BIG HEART -->
+            <div id="mainChoco">
+             <div><a href="">ALL Chocolate Dreamcake</a></div>
+             <div class="paragrid" id="cakegrid" >Cakes</div>
+             <div class="paragrid">2.5 LBS</div>
+             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
+             <div class="input_block">
+             <div class="rupee">Rs 3100</div><br>
+             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
+             </div><button class="addcart">Add to Cart</button></div>
+            </div></div>
+         </div>
+         <!-- full image end -->
 
-                 <div class="fullimage">
+                   <!-- full image -->
+       <div class="fullimage">
          <div class="img_grid">
-           <img src="../asserts/Chocolate-Dreamcake-2.jpg" alt="">
-           <div><a href="">ALL Chocolate Dreamcake</a></div>
-           <div class="paragrid" id="cakegrid" >Cakes</div>
-           <div class="paragrid">2.5 LBS</div>
-           <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br><br>
-           <div class="input_block">
-           <div class="rupee">Rs 3100</div><br>
-           <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-           </div><button class="addcart">Add to Cart</button></div>
-               </div></div>
+          <div><img src="../asserts/Chocolate-Dreamcake-2.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
+       <!-- BIG HEART -->
+             <div id="hoverheart2">
+                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
+                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
+             </div> 
+       <!-- END BIG HEART -->
+            <div id="mainChoco">
+             <div><a href="">ALL Chocolate Dreamcake</a></div>
+             <div class="paragrid" id="cakegrid" >Cakes</div>
+             <div class="paragrid">2.5 LBS</div>
+             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
+             <div class="input_block">
+             <div class="rupee">Rs 3100</div><br>
+             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
+             </div><button class="addcart">Add to Cart</button></div>
+            </div></div>
+         </div>
+         <!-- full image end -->
 
-                 <div class="fullimage">
+                   <!-- full image -->
+       <div class="fullimage">
          <div class="img_grid">
-           <img src="../asserts/Chunky-blend-3.jpg" alt="">
-           <div><a href="">ALL Chocolate Dreamcake</a></div>
-           <div class="paragrid" id="cakegrid" >Cakes</div>
-           <div class="paragrid">2.5 LBS</div>
-           <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br><br>
-           <div class="input_block">
-           <div class="rupee">Rs 3100</div><br>
-           <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-           </div><button class="addcart">Add to Cart</button></div>
-               </div></div>
+          <div><img src="../asserts/Chunky-blend-3.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
+       <!-- BIG HEART -->
+             <div id="hoverheart2">
+                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
+                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
+             </div>  
+       <!-- END BIG HEART -->
+            <div id="mainChoco">
+             <div><a href="">ALL Chocolate Dreamcake</a></div>
+             <div class="paragrid" id="cakegrid" >Cakes</div>
+             <div class="paragrid">2.5 LBS</div>
+             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
+             <div class="input_block">
+             <div class="rupee">Rs 3100</div><br>
+             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
+             </div><button class="addcart">Add to Cart</button></div>
+            </div></div>
+         </div>
+         <!-- full image end -->
 
-                 <div class="fullimage">
+                  <!-- full image -->
+       <div class="fullimage">
          <div class="img_grid">
-           <img src="../asserts/Hersheys-Chocolate-Cake-4.jpg" alt="">
-           <div><a href="">ALL Chocolate Dreamcake</a></div>
-           <div class="paragrid" id="cakegrid" >Cakes</div>
-           <div class="paragrid">2.5 LBS</div>
-           <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br><br>
-           <div class="input_block">
-           <div class="rupee">Rs 3100</div><br>
-           <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-           </div><button class="addcart">Add to Cart</button></div>
-               </div></div>
+          <div><img src="../asserts/Hersheys-Chocolate-Cake-4.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
+       <!-- BIG HEART -->
+               <div id="hoverheart2">
+                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
+                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
+             </div> 
+       <!-- END BIG HEART -->
+            <div id="mainChoco">
+             <div><a href="">ALL Chocolate Dreamcake</a></div>
+             <div class="paragrid" id="cakegrid" >Cakes</div>
+             <div class="paragrid">2.5 LBS</div>
+             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
+             <div class="input_block">
+             <div class="rupee">Rs 3100</div><br>
+             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
+             </div><button class="addcart">Add to Cart</button></div>
+            </div></div>
+         </div>
+         <!-- full image end -->
 
-                 <div class="fullimage">
+                <!-- full image -->
+       <div class="fullimage">
          <div class="img_grid">
-           <img src="../asserts/Lotus2-5.jpg" alt="">
-           <div><a href="">ALL Chocolate Dreamcake</a></div>
-           <div class="paragrid" id="cakegrid" >Cakes</div>
-           <div class="paragrid">2.5 LBS</div>
-           <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br><br>
-           <div class="input_block">
-           <div class="rupee">Rs 3100</div><br>
-           <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-           </div><button class="addcart">Add to Cart</button></div>
-               </div></div>
+          <div><img src="../asserts/Lotus2-5.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
+       <!-- BIG HEART -->
+             <div id="hoverheart2">
+                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
+                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
+             </div> 
+       <!-- END BIG HEART -->
+            <div id="mainChoco">
+             <div><a href="">ALL Chocolate Dreamcake</a></div>
+             <div class="paragrid" id="cakegrid" >Cakes</div>
+             <div class="paragrid">2.5 LBS</div>
+             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
+             <div class="input_block">
+             <div class="rupee">Rs 3100</div><br>
+             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
+             </div><button class="addcart">Add to Cart</button></div>
+            </div></div>
+         </div>
+         <!-- full image end -->
 
-                 <div class="fullimage">
+             <!-- full image -->
+       <div class="fullimage">
          <div class="img_grid">
-           <img src="../asserts/Lotus-Three-Milk-Cake-6.jpeg" alt="">
-           <div><a href="">ALL Chocolate Dreamcake</a></div>
-           <div class="paragrid" id="cakegrid" >Cakes</div>
-           <div class="paragrid">2.5 LBS</div>
-           <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br><br>
-           <div class="input_block">
-           <div class="rupee">Rs 3100</div><br>
-           <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-           </div><button class="addcart">Add to Cart</button></div>
-               </div></div>
+          <div><img src="../asserts/Lotus-Three-Milk-Cake-6.jpeg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
+       <!-- BIG HEART -->
+             <div id="hoverheart2">
+                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
+                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
+             </div>
+       <!-- END BIG HEART -->
+            <div id="mainChoco">
+             <div><a href="">ALL Chocolate Dreamcake</a></div>
+             <div class="paragrid" id="cakegrid" >Cakes</div>
+             <div class="paragrid">2.5 LBS</div>
+             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
+             <div class="input_block">
+             <div class="rupee">Rs 3100</div><br>
+             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
+             </div><button class="addcart">Add to Cart</button></div>
+            </div></div>
+         </div>
+         <!-- full image end -->
 
-                 <div class="fullimage">
+            <!-- full image -->
+       <div class="fullimage">
          <div class="img_grid">
-           <img src="../asserts/Milk-Chocolate-7.jpg" alt="">
-           <div><a href="">ALL Chocolate Dreamcake</a></div>
-           <div class="paragrid" id="cakegrid" >Cakes</div>
-           <div class="paragrid">2.5 LBS</div>
-           <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br><br>
-           <div class="input_block">
-           <div class="rupee">Rs 3100</div><br>
-           <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-           </div><button class="addcart">Add to Cart</button></div>
-               </div></div>
+          <div><img src="../asserts/Milk-Chocolate-7.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
+       <!-- BIG HEART -->
+              <div id="hoverheart2">
+                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
+                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
+             </div>  
+       <!-- END BIG HEART -->
+            <div id="mainChoco">
+             <div><a href="">ALL Chocolate Dreamcake</a></div>
+             <div class="paragrid" id="cakegrid" >Cakes</div>
+             <div class="paragrid">2.5 LBS</div>
+             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
+             <div class="input_block">
+             <div class="rupee">Rs 3100</div><br>
+             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
+             </div><button class="addcart">Add to Cart</button></div>
+            </div></div>
+         </div>
+         <!-- full image end -->
 
-                 <div class="fullimage">
+        <!-- full image -->
+       <div class="fullimage">
          <div class="img_grid">
-           <img src="../asserts/Nutella-8.jpg" alt="">
-           <div><a href="">ALL Chocolate Dreamcake</a></div>
-           <div class="paragrid" id="cakegrid" >Cakes</div>
-           <div class="paragrid">2.5 LBS</div>
-           <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br><br>
-           <div class="input_block">
-           <div class="rupee">Rs 3100</div><br>
-           <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-           </div><button class="addcart">Add to Cart</button></div>
-               </div></div>
-         
+          <div><img src="../asserts/Nutella-8.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
+       <!-- BIG HEART -->
+             <div id="hoverheart2">
+                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
+                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
+             </div>
+       <!-- END BIG HEART -->
+            <div id="mainChoco">
+             <div><a href="">ALL Chocolate Dreamcake</a></div>
+             <div class="paragrid" id="cakegrid" >Cakes</div>
+             <div class="paragrid">2.5 LBS</div>
+             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
+             <div class="input_block">
+             <div class="rupee">Rs 3100</div><br>
+             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
+             </div><button class="addcart">Add to Cart</button></div>
+            </div></div>
+         </div>
+         <!-- full image end -->
            <!-- buttom load -->
 <div id="more">
 
-
-
-
-
-
-
-
-
 </div>
-
-
-
-
-
-
-
-       
-
 
 
         <!-- here main images end -->
       
       </div>
      <!-- load more button -->
-      <div id="load"><button>Load More</button></div>
+      <div id="load" ><button class="nomore">Load More</button></div>
     </div>
     <!--  content area end -->
 
 
     <!-- aside bar -->
-    <div id="maincart">
+    <div id="maincart" class="nomore">
       <span id="cart">CART</span>
       <div id="block_cart">
-        <div id="empty"><img src="../asserts/empty_cart.png" alt=""> </div>
+        <div id="empty">
+          <!-- <img src="../asserts/empty_cart.png" alt=""> -->
+           <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/EBEBEB/clear-shopping-cart.png" alt="clear-shopping-cart"/>
+         </div>
         <p id="no_pro">No product in the cart</p>
         <button id="shop_button">Return to shop</button>
-        <article>You must have an order with a minimum of <span style="color: #B09C6D;font-weight: bold;">Rs
-            1000</span>to place your order, your current order total is <span
+        <article>You must have an order with a minimum of<span style="color: #B09C6D;font-weight: bold;"> Rs 
+            1000 </span>to place your order, your current order total is <span
             style="color: #B09C6D;font-weight: bold;">₨ 0</span>
         </article>
       </div>
@@ -521,48 +684,33 @@
     <div id="foot">
 
 
-      <p>© 2024 Layers Bakeshop | Powered by <a href="#">MATZ Solutions</a></p>
-      <div> 
-     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50" id="Logo-Facebook--Streamline-Ionic-Filled" height="50" width="50" >
-  <desc>
-    Logo Facebook Streamline Icon: https://streamlinehq.com
-  </desc>
-  <path fill="#b09c6d" fill-rule="evenodd" d="M49.50000000000001 25.147083333333338C49.50000000000001 11.6175 38.5296875 0.6471875 24.999895833333337 0.6471875 11.4703125 0.6471875 0.5 11.6175 0.5 25.147083333333338c0 12.228125000000002 8.957708333333333 22.363958333333336 20.671770833333333 24.203645833333333V32.23135416666667h-6.2221875v-7.084270833333334h6.2221875v-5.397604166666667c0 -6.139166666666667 3.658645833333334 -9.533125 9.254270833333335 -9.533125 2.6808333333333336 0 5.4852083333333335 0.4790625 5.4852083333333335 0.4790625v6.029895833333335h-3.0909375c-3.0417708333333335 0 -3.9933333333333336 1.8878125000000001 -3.9933333333333336 3.828125v4.593645833333334h6.7943750000000005l-1.0850000000000002 7.084270833333334h-5.708333333333334v17.121458333333333C40.54208333333334 47.51427083333334 49.50000000000001 37.378437500000004 49.50000000000001 25.147083333333338Z" clip-rule="evenodd" stroke-width="1.0417"></path>
+      <p>© 2024 <span id="colorChanger">Layers Bakeshop</span> | Powered by <a href="#">MATZ Solutions</a></p>
+      <div id="footIcon"> 
+   <div class="same">
+ <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="footing" width="50" height="50" viewBox="0,0,256,256"
+style="fill:#FFFFFF;">
+<g fill="#b09c6d" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,256v-256h256v256z" id="bgRectangle"></path></g><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z"></path></g></g>
 </svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1000 1000" id="Logo-Instagram--Streamline-Ionic-Filled" height="1000" width="1000" class="footing">
-  <desc>
-    Logo Instagram Streamline Icon: https://streamlinehq.com
-  </desc>
-  <path fill="#b09c6d" d="M704.1583333333333 91.65833333333333c54.104166666666664 0.16249999999999998 105.94375 21.72708333333333 144.2 59.98333333333333 38.25416666666666 38.25625 59.820833333333326 90.09583333333333 59.98125 144.2v408.31666666666666c-0.16041666666666665 54.104166666666664 -21.72708333333333 105.94375 -59.98125 144.2 -38.25625 38.25416666666666 -90.09583333333333 59.820833333333326 -144.2 59.98125H295.84166666666664c-54.104166666666664 -0.16041666666666665 -105.94375 -21.72708333333333 -144.2 -59.98125 -38.25625 -38.25625 -59.820833333333326 -90.09583333333333 -59.98333333333333 -144.2V295.84166666666664c0.16249999999999998 -54.104166666666664 21.72708333333333 -105.94375 59.98333333333333 -144.2 38.25625 -38.25625 90.09583333333333 -59.820833333333326 144.2 -59.98333333333333h408.31666666666666Zm0 -81.65833333333333H295.84166666666664C138.625 9.999999999999998 9.999999999999998 138.625 9.999999999999998 295.84166666666664v408.31666666666666C9.999999999999998 861.3729166666666 138.625 990 295.84166666666664 990h408.31666666666666c157.2145833333333 0 285.84166666666664 -128.62708333333333 285.84166666666664 -285.84166666666664V295.84166666666664C990 138.625 861.3729166666666 9.999999999999998 704.1583333333333 9.999999999999998Z" stroke-width="20.8333"></path>
-  <path fill="#b09c6d" d="M765.375 295.8041666666667c-12.1125 0 -23.95208333333333 -3.5916666666666663 -34.025 -10.322916666666666 -10.070833333333333 -6.729166666666666 -17.922916666666666 -16.295833333333334 -22.55833333333333 -27.485416666666662 -4.635416666666666 -11.189583333333333 -5.847916666666666 -23.50625 -3.4854166666666666 -35.3875 2.3645833333333335 -11.879166666666666 8.195833333333333 -22.791666666666668 16.760416666666664 -31.358333333333334 8.566666666666666 -8.564583333333333 19.479166666666668 -14.397916666666667 31.360416666666666 -16.760416666666664 11.879166666666666 -2.3625 24.195833333333333 -1.15 35.385416666666664 3.483333333333333 11.19375 4.637499999999999 20.758333333333333 12.4875 27.485416666666662 22.560416666666665 6.731249999999999 10.070833333333333 10.322916666666666 21.9125 10.322916666666666 34.025 0.01875 8.047916666666666 -1.5541666666666665 16.020833333333332 -4.627083333333333 23.456249999999997 -3.0708333333333333 7.439583333333332 -7.583333333333333 14.197916666666666 -13.272916666666665 19.88958333333333 -5.691666666666666 5.689583333333333 -12.45 10.2 -19.8875 13.272916666666665 -7.437499999999999 3.0708333333333333 -15.410416666666666 4.64375 -23.45833333333333 4.627083333333333Z" stroke-width="20.8333"></path>
-  <path fill="#b09c6d" d="M500.025 336.66249999999997c32.30416666666667 0 63.8875 9.579166666666666 90.74583333333334 27.52708333333333 26.8625 17.947916666666668 47.8 43.45833333333333 60.16041666666667 73.30624999999999 12.3625 29.845833333333335 15.597916666666666 62.68958333333333 9.29375 94.37291666666665 -6.302083333333333 31.68541666666666 -21.85833333333333 60.789583333333326 -44.699999999999996 83.63333333333333 -22.84583333333333 22.841666666666665 -51.949999999999996 38.4 -83.63333333333333 44.702083333333334 -31.68541666666666 6.304166666666666 -64.52708333333334 3.0687499999999996 -94.37291666666665 -9.295833333333333 -29.85 -12.360416666666667 -55.35833333333333 -33.295833333333334 -73.30833333333334 -60.15833333333333 -17.947916666666668 -26.860416666666662 -27.52708333333333 -58.44166666666666 -27.52708333333333 -90.74583333333334 0.04791666666666666 -43.30833333333334 17.272916666666664 -84.82708333333332 47.893750000000004 -115.44791666666666 30.622916666666665 -30.622916666666665 72.14166666666667 -47.84791666666666 115.44791666666666 -47.893750000000004Zm0 -81.66041666666666c-48.45625 0 -95.82499999999999 14.370833333333332 -136.11458333333331 41.28958333333333 -40.291666666666664 26.922916666666666 -71.69166666666666 65.1875 -90.23333333333332 109.95208333333333 -18.54375 44.77083333333333 -23.397916666666664 94.02916666666665 -13.945833333333333 141.55624999999998 9.45625 47.525 32.78958333333333 91.17916666666666 67.05208333333333 125.44375 34.266666666666666 34.2625 77.91874999999999 57.59583333333333 125.44375 67.05208333333333 47.52708333333333 9.454166666666666 96.78541666666665 4.6 141.55624999999998 -13.941666666666666 44.76874999999999 -18.54375 83.03125 -49.94583333333333 109.95208333333333 -90.2375 26.91875 -40.28958333333333 41.28958333333333 -87.65624999999999 41.28958333333333 -136.1125 0 -64.97708333333333 -25.8125 -127.29583333333332 -71.75833333333333 -173.24166666666665s-108.26458333333332 -71.76041666666667 -173.24166666666665 -71.76041666666667Z" stroke-width="20.8333"></path>
+</div>
+<div class="same">
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="footing" width="24" height="24" viewBox="0 0 24 24"
+style="fill:#FFFFFF;">
+    <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"></path>
 </svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" id="Logo-Youtube--Streamline-Ionic-Filled" height="100" width="100" class="footing">
-  <desc>
-    Logo Youtube Streamline Icon: https://streamlinehq.com
-  </desc>
-  <g clip-path="url(#a)">
-    <path fill="#b09c6d" d="M47.683 13.9431c0-4.2187-3.1031-7.6124-6.9375-7.6124-5.1936-.24281-10.4904-.33656-15.9035-.33656h-1.6875c-5.3999 0-10.7061.09375-15.89973.3375-3.82495 0-6.928032 3.41245-6.928032 7.63116-.2343722 3.3365-.33374596 6.674-.32812103 10.0114C-.0107579 27.3117.0954905 30.6522.317363 33.996c0 4.2186 3.103087 7.6405 6.928037 7.6405 5.4561.2531 11.0529.3656 16.7435.3562 5.6999.0188 11.2812-.1 16.7435-.3562 3.8343 0 6.9374-3.4219 6.9374-7.6405.225-3.3469.3282-6.6843.3188-10.0312.0213-3.3374-.0806-6.678-.3056-10.0217ZM19.4046 33.171V14.7493l13.5935 9.2062-13.5935 9.2155Z"></path>
-  </g>
-  <defs>
-    <clipPath id="a">
-      <path fill="#ffffff" d="M0 0h47.999v47.999H0z" transform="translate(-.001 -.006)"></path>
-    </clipPath>
-  </defs>
+</div>
+<div class="same">
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="footing" width="24" height="24" viewBox="0 0 24 24"
+style="fill:#FFFFFF;">
+    <path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path>
 </svg>
-
-
-      
-
+</div>
       </div>
 
 
     </div>
   </footer>
 <!-- end footer -->
-
+<script src="../"></script>
 
 </body>
 

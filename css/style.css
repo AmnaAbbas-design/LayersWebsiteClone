@@ -34,11 +34,21 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-      background-color:rgb(238, 238, 238);
-      height: 70px;
+      background-color:rgb(238, 238, 238,0.90);
+      height: 60px;
       position: fixed;
-      width: 100%;
-
+      width: 100%; 
+      z-index: 100;
+      
+}
+.big{
+    background-color: #B09C6D;
+    height: 100px;
+    width: 100px;
+}
+.imgBig{
+    height: 50px;
+    width: 50px;
 }
 
 
@@ -46,20 +56,19 @@ nav{
 width: 10vw;}
 
 #loc{
-   width: 200px;
-height: 48px;
+  
  color: #FFFFFF;
     font-size: 15px;
     font-weight: normal;
     width: 220px;
-    height: 30px;
+    height: 25px;
     background-color: #B09C6D;
     margin-top: 3px;
     padding-top: 15px;
     border-radius: 20px;
     text-align: center;
    font-weight: 500px;
-   margin-left: 12px;
+   margin-left: 10px;
 }
 
 
@@ -71,6 +80,9 @@ ul{
     width: 50vw;
     
 }
+.hamburger{
+    /* display: none; */
+}
 
 svg{
  
@@ -78,23 +90,68 @@ svg{
       height: 60%;
     width: 20px;
 }
-
+ 
 #icons{
     display: flex;
     align-items: center;  
     padding-right: 50px;
     gap: 20px;
     width: 100px;
+    margin-right: 10px;
+    position: relative;
+    height: 39px;
+    
+}
+.Noneed{
+    display :none;
+}
+#mainSideBar{
+    position: fixed;
+    z-index: 100;
+    background-color: #ffffff;
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+     display: none;
+}
+.smallNum{
+    background-color: #B09C6D;
+    position: absolute;
+    right: 0%;
+    color: #FFFFFF;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    top: 0px;
+   
+}
+#smallNumId{
+  right: 27%;
+}
+#divDropSocial{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+}
+#divDropSocial div{
+    color: #777777;
+    display: none;
 }
 
-@media(max-width:600px) {
-
-    #icons{
-        flex-wrap: wrap;
-    }
+#divDropSocial:active+ #divDropSocial div{
+    display: block;
 }
+
 #big_img{
-     height: 400px;
+     height: 500px;
      width:100%; 
    background-image: url("https://layers.pk/wp-content/uploads/2021/12/Title-4.jpg");
    background-size: cover;
@@ -106,6 +163,7 @@ svg{
 margin-bottom: 20px;
 
 }
+
 .font{
     
      font-family: 'foglightenno07.regular';
@@ -116,7 +174,7 @@ margin-bottom: 20px;
 #small_img{
     width: 100%;
     display: flex;
-    justify-content:center; 
+    justify-content:center;
 }
 a{
     text-decoration: none;
@@ -127,7 +185,6 @@ a{
     margin-right: 10px;  
      height: 30px;
      width: 40px;
-   
    
 }
 .block_small{
@@ -163,13 +220,83 @@ h1{
 }
 
 #home_hover{
-    /* display: none; */
+    display: none;
     background-color: #FFFFFF;
-    margin-top: 630px;
-    width: 800px;
+    margin-top: 640px;
+    width: 900px;
     position: absolute;
     left: 350px;
+  
 }
+#hoverheart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+ }
+ #hmrelative{
+    height: 160px;
+    width: 160px;
+    position: absolute;
+  
+  } 
+ 
+  #downCart{
+    position:relative;
+    background-color: #B09C6D;
+    color: #FFFFFF;
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 3px;
+    bottom: 0%;
+    top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+   border-radius: 0%;
+   height: 40px;
+  
+ } 
+ #ferroCake{
+    text-align: center;
+ }
+
+ .hm{
+    position: relative;
+    top: 0%;
+    border-radius: 50%;
+    background-color: #B09C6D;
+    height: 40px;
+    width: 40px;
+    align-self: flex-end;
+   margin: 5px;
+    align-items: center;
+    justify-content: center;
+     visibility: hidden;
+
+ }
+ /* .meme{
+    position: relative;
+     border: solid red;
+ } */
+ 
+  
+
+  #mainHoverHeart:hover .hm{
+  
+    visibility: visible;
+    display: flex;
+   
+ } 
+
+
+
+ 
+ 
 #anchori{
     height: 70px;
 }
@@ -179,14 +306,26 @@ h1{
 #home_hover:hover{
     display: block;
 }
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+     
+     
+}
 
 
 #menu_hover{
     display: none;
     background-color: #FFFFFF;
-    margin-top: 633px;
+    margin-top: 570px;
     width: 980px;
     position: absolute;  
+
+    
 }
 
 #menu_anchor:hover + #menu_hover{
@@ -200,29 +339,36 @@ h1{
 #menu_grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+    width:700px;
+    padding-left: 120px;
   
 }
 .cen p:nth-child(2) {
-    color: #B09C6D;
+    font-weight: 500;
+   
 }
 .cen p:nth-child(1){
     font-size: larger;
      font-family: 'foglightenno07.regular';
      font-weight: 700;
 }
+.cen p:nth-child(1):hover{
+      font-family: 'foglightenno07.regular';
+      color: #B09C6D;
+}
+
+
+
 
 .cen{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+   
+    
 }
 .layerspan{
-    color: #B09C6D;
+    color:#B09C6D;
     
 }
 .layerspan{
@@ -232,13 +378,16 @@ h1{
        color: #7a7a7a;
 
 }
+#menusmall{
+    width: 150px;
+    height: 210px;
+}
 #h1_menu{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
     margin-top: 30px;
-
 }
 #h1_div h1{
     font-size: 35px;
@@ -253,17 +402,9 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-
     
 }
+
 #h1_div{
     display: flex;
     justify-content: center;
@@ -334,7 +475,7 @@ select{
 #content{
 width: 1090px;
 height: auto;
-
+padding-right: 15px;
 
 }
 #shopshow{
@@ -348,15 +489,17 @@ height: auto;
      height: 230px;
     width: 230px;
     padding-bottom: 10px;
+  
 }
-.img_grid :nth-child(2){
+#mainChoco :nth-child(1) a{
       font-family: 'foglightenno07.regular';
       font-size: 22px;
       font-weight: 700;
+     cursor: pointer;
       
 }
 
-.img_grid :nth-child(2) a:hover{
+#mainChoco :nth-child(1) a:hover{
       font-family: 'foglightenno07.regular';
       color: #B09C6D;
     
@@ -374,7 +517,209 @@ height: auto;
     margin-left: 20px;
     height: auto;
     margin-top: 40px;
+  
 }
+#imgabsolute{
+position: absolute;
+  }
+ .hm2{
+    position: relative;
+    top: 0%;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    align-self: flex-end;
+    margin: 5px ;
+  
+
+ }
+ .fullimage:hover .heart2{
+    display: flex;
+    visibility: visible;
+ }
+
+
+  #hoverheart2{
+    flex-direction: column;
+    margin-right: 20px;
+    display: flex;
+    
+  }
+
+  .heart2{
+    background-color: #B09C6D;
+    height: 40px;
+    width: 40px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  visibility: hidden;  
+  
+  
+}
+ #mainChoco{
+    position: relative;
+    top: 120px;
+    margin-top: 15px;
+} 
+ 
+.heart2 img{
+   height: 25px;
+   width: 25px;
+   background-color: #B09C6D;
+   border-radius: 50%;
+   padding-top: 5px;
+
+}
+.fullimage{
+    height: 620px;
+}
+
+ 
+ #hmrelative2 {                                        
+    position: absolute;
+    cursor: pointer;
+    
+ }
+ 
+.full_image{
+    width: 250px;
+}
+.addcart{
+    width: 100px; 
+    height: 42px;
+    color: #FFFFFF;
+    font-family: "Heebo", sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    border: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 13px;
+    background-color: #B09C6D;
+    margin-left: 20px;
+} 
+
+@media(max-width:600px) {
+    body{
+      
+        overflow-x:hidden;
+    }
+  
+#hero_grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+    height: auto;
+    margin-top: 40px;
+}
+#hero_grid img{
+    height: auto;
+}
+#imgabsolute{
+position: absolute;
+  }
+ /* .hm2{
+    position: relative;
+    top: 0%;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    align-self: flex-end;
+    margin: 5px ;
+
+ }
+  */
+ /* .fullimage:hover #heart2{
+    display: flex;
+    visibility: visible;
+ } */
+
+
+   #hoverheart2{
+   
+    background-color: #333333;
+    height: 300px;
+    
+   }
+
+  .heart2{
+    background-color: #B09C6D;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+   visibility: visible;
+  margin-top: 30px;
+}
+.fullimage:hover .heart2:last-child{
+    display: none;
+    
+ }
+.heart2 img{
+}
+
+
+ #mainChoco{
+    margin-top: 16%;
+   height: 200px;
+   
+} 
+
+ 
+.heart2 img{
+   height: 20px;
+   width: 20px;
+   background-color: #B09C6D;
+   border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#heartImage{
+    height: 40px;
+    width: 40px;
+
+}
+.fullimage{
+  
+    
+}
+.img_grid img{
+    width: 90%;
+    height: 350px;
+}
+.fullimage{
+    height: 800px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+ 
+ #hmrelative2 {
+    position: absolute;
+    cursor: pointer;
+    
+ }
+.paragrid{
+    width:400px;
+    height: 40px;  
+}
+.input_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.addcart {
+    display: none;
+}
+
+}
+/* end query */
+
 #hero{
     display: flex;
     height: auto;
@@ -402,37 +747,42 @@ margin-top: 5px;
     margin: 20px 0px;
     
 }
-#empty img{
-    height: 70px; 
-}
+
 #cart{
-        font-weight: 900;
-    font-size: 20px;
+    font-weight: 800;
+    font-size: 16px;
+   
 }
 #block_cart{
-    width: 290px;
+    width: 300px;
     height: 455px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
+  
+    
 }
 article{
     color:#777777;
     font-size: 16px;
     line-height: 1.5;
+   width: 290px;
+    margin-top: 10px;
+
 }
 #hr{
     padding-bottom: 30px;
 }
 #selector_show {
-     width: 250px;
+     width: 200px;
     height: 38px;
     color: #7a7a7a;
     background-color: #BBBBBB26;
     padding-block: 1px;
     padding-right: 10px;
     border: none;
+    margin-left: 10px;
 
     
 }
@@ -442,7 +792,7 @@ article{
     height: 60px;
     color:#686464;
       display: inline-block;
-   font-size: 1.5vw;
+font-size: larger;
    padding-top: 8px;
 font-weight:500;
 padding-left: 50px;
@@ -452,6 +802,7 @@ padding-left: 50px;
 #loc_block{
     width: 220px;
     border: none;
+    line-height:2;
 }
 .pin{
   height: 30px;
@@ -568,39 +919,7 @@ display: block;
        margin: 5px;
        border: none;
 }
-footer{
-  background-image: url(../asserts/imgi_56_Footer.png);
-  height: 150px;
-  box-sizing: border-box;
-  background-repeat:no-repeat;
-  background-size: contain;
-   width:100%;
-   background-size: 1990px;
-   background-position-x: right;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
-  
-  
-}
-#foot{
-   padding-bottom: 20px;
-}
- .footing {
-   margin-top: 10px;
-   
-} 
-.footersvg{
-       width: 35px;
-    height: 25px;
 
-}
-#foot a{
-    text-decoration: underline;
-    font-weight: 500;
-
-}
 
 #bigImageMenu{
     color: #FFFFFF;
@@ -637,6 +956,11 @@ padding-left: 19px;
     color: #686464;
     line-height: 2;
 }
+.paranew{
+ color: #686464;
+    line-height: 4;
+    font-size: 20px;
+}
 .imgBtn{
 
 
@@ -647,26 +971,10 @@ width: 100px;
 .input_block{ 
     height: 100px;
 }
-.full_image{
-    width: 250px;
-}
-.addcart{
-    width: 100px; 
-    height: 42px;
-    color: #FFFFFF;
-    font-family: "Heebo", sans-serif;
-  display: inline-block;
-font-weight: 700;
-border: none;
-padding-right: 10px;
-    padding-left: 10px;
-    font-size: 13px;
-    background-color: #B09C6D;
-    margin-left: 20px;
-} 
  .rupee{
      color: #B09C6D;
-     font-weight: 600;   
+     font-weight: 600;
+     font-family: "Heebo", sans-serif;
  }
   #load{
     display: flex;
@@ -675,47 +983,238 @@ padding-right: 10px;
     width: 100%;
     height: 30px;
      margin-bottom: 40px;
-   
+
  }
  #load button{
   color: #333333;
   height: 40px;
-  width:100px ;
+  width:120px ;
   background-color: transparent;
   font-weight: 700;
- 
+ border: 1px solid #77777733;
  } 
- #hoverheart{
+  
+ #colorChanger{
+    color: #B09C6D;
+    font-weight: 700;
+ }
+/* footer */
+footer{
+  background-image: url(../asserts/imgi_56_Footer.png);
+  height: 150px;
+  box-sizing: border-box;
+  background-repeat:no-repeat;
+  background-size: contain;
+   width:100%;
+   background-size: 1990px;
+   background-position-x: right;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+  
+}
+#foot{
+   padding-bottom: 20px;
+}
+#foot p{
+    color: #7a7a7a;
+}
+ .footing {
+ 
+   padding-top: 5px;
+
+} 
+.footersvg{
+    width: 35px;
+    height: 25px;
+
+}
+#foot a{
+    text-decoration: underline;
+    font-weight: 700;
+    color: #333333;
+
+}
+ .same{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color:#B09C6D;
+    position: relative;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+#LogoFace{
+position: relative;
+
+}
+#footIcon{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid green;
-    height: 150px;
+
+}
+
+@media(max-width:600px) {
+    .Noneed{
+     display: block;
+ }
+ .nomore{
+    display: none;
+ }
+    body{
+        width: 100%;
+    }
+    nav{
+display: flex;
+align-items: stretch;
+justify-content: space-between;
+    }
+#small_img{
+display: flex;
+flex-direction: column;
+}
     
- }
- .hm{
-    border: solid;
-    position: relative;
-    top: 0%;
-    border-radius: 50%;
-    color: #B09C6D;
-    height: 40px;
-    width: 40px;
-    align-self: flex-end;
-    border: solid red;
-    margin: 5px ;
+    #bigImageMenu{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 100px;
+        font-size: 30px;
+    }
+    .cen{
+        display: block;
+       
     
- }
- .hmrelative{
-    position: absolute;
-    border: solid gold;
- }
- /* #downCart{
-    position: relative;
-    height: 30px;
-    background-color: #B09C6D;
-    border: solid green;
+    }
+    
+  .block_small{
+    display: none;
+  }  
+  #ham2{
+    height: 20px;
+    padding: 5px;
+  }
+  #ham2div{
     width: 100%;
-    margin-top: 65px;
- } */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ #ham2:active .block_small{
+    display: block;
+ }   
+ 
+ #big_img{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  
+    
+ }
+ #cato{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px;
+    
+ }
+ #myHamburger{
+
+    width: 60px;
+     display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+  .Hamburger:active #mainSideBar{
+display: block;
+}
+    
+    #logo{
+        width: 150px;
+        margin-left: 55px;
+    }
+ 
+    #icons{
+        padding: 0%;
+        justify-content: flex-end;
+        padding-right: 15px;
+
+    }
+    .smallNum{
+       right: 10px;
+    }
+    #big_img{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 300px;
+        
+    }
+
+#breadcrumbs{
+    
+}
+
+#searchSection{
+    display: flex;
+    border-bottom: 1px solid #77777733;
+    align-items: center;
+    
+}
+#serser{
+    height: 70px;
+    font-weight: 600;
+    font-size: 15px;
+    
+   
+}
+
+#ser{
+    padding-right: 10px;
+    display: inline;
+    
+}
+
+.sideSmall{
+    border-bottom: 1px solid #77777733;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+#blockSideBar div{
+   background-color: white;
+   font-size: 12px;
+   font-weight: 550;
+      line-height: 5;
+    font-family: "Heebo";
+    padding-left: 10px;
+}
+#blockSideBar input{
+    width: 100%;
+    border: none;
+}
+
+.fog{
+  font-family: 'foglightenno07.regular'; 
+  font-weight: 700;  
+
+}
+.dropdrop{
+    display: none;
+}
+#smallNumId{
+    display: none;
+}
+ 
+}
+
+
+ 
