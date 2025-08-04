@@ -226,7 +226,7 @@ h1{
 #home_hover{
     display: none;
     background-color: #FFFFFF;
-    margin-top: 770px;
+    margin-top: 675px;
     width: 900px;
     position: absolute;
     left: 350px;
@@ -338,7 +338,6 @@ h1{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width:700px;
     padding-left: 120px;
-  
 }
 .cen p:nth-child(2) {
     font-weight: 500;
@@ -356,12 +355,13 @@ h1{
 
 
 
-
 .cen{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    
+    flex-direction: column;    
+}
+.cen p{
+    margin: 0%;
 }
 .layerspan{
     color:#B09C6D;
@@ -419,6 +419,12 @@ h1{
    top: 0px;
 
 }
+.dropdrop{
+    height:11px;
+   color: #7a7a7a;
+   padding-left: 5px;
+}
+
 #about_hover{
     display: none;
     position: absolute;
@@ -689,6 +695,9 @@ color: #777777;
 #hero3{
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
+    height: 600px;
+    /* box-shadow: 5px,5px,black; */
 }
 
 #smallimg{
@@ -709,9 +718,6 @@ color: #777777;
 #hero3img1{
     display: flex;
     flex-direction: column;
-   border: solid gold;
-
-    
 }
 #hero3element{
     display: flex;
@@ -719,8 +725,8 @@ color: #777777;
     align-items: center;
    width: 900px;
    padding-right: 30px;
-   border: solid rgb(0, 81, 255);
    height: 600px;
+   box-sizing: border-box;
 
 }
 #hero3element h4{
@@ -733,7 +739,8 @@ width: 650px;
 background-position: center center;
 height: 600px;
 background-size: cover;
-border: solid green;
+box-sizing: border-box;
+
 
 }
 /* slider */
@@ -742,6 +749,7 @@ border: solid green;
     .swiper {
       width: auto;
       height: 100%;
+      cursor: grab;
     }
 
     .swiper-slide {
@@ -808,7 +816,7 @@ border: solid green;
  }
   #hoverheart2{
     flex-direction: column;
-    margin-right: 20px;
+    margin-right: 10px;
     display: flex;
     width: 220px;  
   }                             
@@ -816,7 +824,7 @@ border: solid green;
     background-color: #B09C6D;
     height: 40px;
     width: 40px;
-    padding-top: 5px;
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -920,10 +928,104 @@ width: 100px;
    #hero4{
     display: flex;
     flex-direction: row-reverse;
+    box-sizing: border-box;
+    height: 800px;
    }
 
  #bigger4{  
 width: 690px;
 background-position: center center;
-height: 600px;
-background-size: cover;}
+height: 800px;
+background-size: cover;
+box-sizing: border-box;
+
+}
+#hero4element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   width: 900px;
+   padding-right: 30px;
+   height: 700px;
+   box-sizing: border-box;
+   justify-content: center;
+}
+#hero4element h4{
+    margin-bottom: 3%;
+}
+/* hero 5 */
+ #hero5{
+    display: flex;
+    box-sizing: border-box;
+    height: 800px;
+   }
+
+ #bigger5{  
+width: 650px;
+background-position: center center;
+height: 800px;
+background-size: cover;
+box-sizing: border-box;
+
+}
+
+/* hero 5 end */
+/* hero 6 start */
+ #hero6{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+
+   }
+ #bigger6{  
+width: 690px;
+background-position: center center;
+height: 800px;
+background-size: cover;
+box-sizing: border-box;
+}
+#hero6element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   width: 900px;
+   padding-right: 30px;
+   height: 650px;
+   box-sizing: border-box;
+   justify-content: center;
+}
+/* hero 6 end */
+/* customer feedback */
+
+.feedback{
+    text-align: center;
+}
+
+#mainFeedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(white,#7bcef1);
+}
+#mainfeedback h4{
+    margin-top: 5px;
+    margin-bottom: 0%;
+}
+/* end cutomer feedback */
+/* video section start*/
+#mainVideoDiv{
+    display: flex;
+    justify-content: space-between;
+}
+#mainVideoDiv img{
+    width: 300px;
+    height: 500px;
+}
+#mainVideoDiv h4{
+    border: solid;
+    width: 450px;
+}
+/* video section end */
+
+/* end feedback */
