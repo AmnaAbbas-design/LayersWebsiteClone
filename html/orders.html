@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu-Layers Bakeshop</title>
-  <link rel="stylesheet" href="../css/style.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/orders.css">
 </head>
-
-<body>  
-   <div id="fullBlack" onclick="blackClick()"></div>  
-  <!-- nav start -->
+  <!-- <div id="fullBlack" onclick="blackClick()"></div> -->
+<body id="bodySt">
+   
+<!-- nav start -->
   <nav>
+     <div id="fullBlack" onclick="blackClick()"></div> 
     <!-- query hamburger -->
-    <div id="myHamburger" class="Noneed" > <svg xmlns="http://www.w3.org/2000/svg" class="hamburger Noneed"  x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+    <div id="myHamburger" class="Noneed" > <svg xmlns="http://www.w3.org/2000/svg" class="hamburger Noneed" id="hamburgersvg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24" onclick="sideQueryOpen()">
 <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path>
 </svg></div>
 <!-- hamburger end -->
@@ -152,7 +151,7 @@
       </div></div>
 <!--menu  -->
 
-      <a href="./index.html" class="anchor" id="menu_anchor">
+      <a href="../html/index.html" class="anchor" id="menu_anchor">
         <li class="nomore">Menu</li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdUlEQVR4nO3NwQnCAAxG4c9xPAgWoah4sUIpoiJ0MldwIqdQqUsUIR4UtS096ruEJP9L+PPgiJV2ZJF/YoEbtg1yHrnlu+UcFXYf5AJXzL59mOCC/ct8HfJUCxKcUUa/CTnVgXEcOUS9950Z4oSRHgz6yH6EGoCbERduBT22AAAAAElFTkSuQmCC" alt="expand-arrow" class="dropdrop" >
       </a>
 
@@ -206,11 +205,11 @@
         </div>
 
       </div>
-      </div>
+     
 
       <!-- about us -->
 
-      <a href="./About.html" class="anchor" id="about_anchor">
+      <a href="../html/About.html" class="anchor" id="about_anchor">
         <li class="nomore" >About Us</li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdUlEQVR4nO3NwQnCAAxG4c9xPAgWoah4sUIpoiJ0MldwIqdQqUsUIR4UtS096ruEJP9L+PPgiJV2ZJF/YoEbtg1yHrnlu+UcFXYf5AJXzL59mOCC/ct8HfJUCxKcUUa/CTnVgXEcOUS9950Z4oSRHgz6yH6EGoCbERduBT22AAAAAElFTkSuQmCC" alt="expand-arrow" class="dropdrop" >
       </a>
       <!-- about hover -->
@@ -218,23 +217,27 @@
         <div id="about_flex">
           <div><img src="../asserts/mob 1.jpg" alt="" class="mob"></div>
           <div><img src="../asserts/mob 2.jpg" alt="" class="mob"></div>
-          <div>
+          <div id="aboutH1Div" >
             <h1><span class="layerspan">Layers</span> Bakeshop</h1>
             <p id="mob_p" class="paranew">Like a fantasy that feels unreal, every delicacy by ‘Layers’ holds a charm that enchants with
               every bite, allowing one to be swept into a moment of bliss, making all your dessert creams come true!
-              <br> <br>
-
+              <br><br>
               Founded in Lahore in 2020, the philosophy of Layers Bakeshop was simple; to create connections through
-              desserts while striking the ideal balance between flavor and feeling. <br> <br>
-
+              desserts while striking the ideal balance between flavor and feeling.  
+               <br><br>
               Since the beginning, Layers has secured an irreplaceable spot in the hearts of people.</p>
           </div>
+
+
         </div>
       </div>
 
 <!-- logo -->
       <li><img src="https://layers.pk/wp-content/uploads/2021/10/Layers-Logo.png" alt="" id="logo"></li>
 
+
+
+     
       <!-- socila media div -->
         <a href="#" class="anchor" id="social_anchor" class="nomore">
         <li class="nomore">Social Media</li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdUlEQVR4nO3NwQnCAAxG4c9xPAgWoah4sUIpoiJ0MldwIqdQqUsUIR4UtS096ruEJP9L+PPgiJV2ZJF/YoEbtg1yHrnlu+UcFXYf5AJXzL59mOCC/ct8HfJUCxKcUUa/CTnVgXEcOUS9950Z4oSRHgz6yH6EGoCbERduBT22AAAAAElFTkSuQmCC" alt="expand-arrow" class="dropdrop" >
@@ -267,27 +270,70 @@
         </svg></a>
 
       <a class="icon nomore" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-          stroke="currentColor" className="size-6" class="nomore">
+          stroke="currentColor" className="size-6" class="nomore"  height="32px" id="iam"  onclick="openperson()">
           <path strokeLinecap="round" strokeLinejoin="round"
             d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
         </svg></a>
+        
+    <!-- mainlog section of sidebar of login-->
+    <!-- block 1 -->
+    <div id="log">
+      <div id="divLogSection"> <div id="signClose"> <h2 class="font">Sign in</h2> <div id="closeimg" onclick="closePerson()"><span class="meiSvg">Close</span> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" class="meiSvg" viewBox="0 0 24 24">
+<path d="M 4.4042969 3 C 3.7572969 3 3.3780469 3.7287656 3.7480469 4.2597656 L 9.7363281 12.818359 L 3.7246094 19.845703 C 3.3356094 20.299703 3.6578594 21 4.2558594 21 L 4.9199219 21 C 5.2129219 21 5.4916406 20.871437 5.6816406 20.648438 L 10.919922 14.511719 L 14.863281 20.146484 C 15.238281 20.680484 15.849953 21 16.501953 21 L 19.835938 21 C 20.482937 21 20.862187 20.272188 20.492188 19.742188 L 14.173828 10.699219 L 19.900391 3.9902344 C 20.232391 3.6002344 19.955359 3 19.443359 3 L 18.597656 3 C 18.305656 3 18.027891 3.1276094 17.837891 3.3496094 L 12.996094 9.0097656 L 9.3945312 3.8554688 C 9.0205313 3.3194687 8.4098594 3 7.7558594 3 L 4.4042969 3 z"></path>
+</svg></div></div>
+      
+        <label class="lableli" id="hrline">Username or email</label>
+        <input type="text" class="userinput" autocomplete="on">
+       
+         <label class="lableli">Password</label><input type="password"  class="userinput" autocomplete="on"> 
+          
+     <div id="passblock">  <div id="div"><input type="checkbox"> Remember me </div><span class="lostPass">lost your password?</span> </div>
+        <button class="loginButton">Log in</button></div>
+    
+    <div id="mainNoAccount">
+   <img width="100" height="100" src="https://img.icons8.com/pastel-glyph/100/EBEBEB/person-male--v2.png" alt="person-male--v2"/>
+<p>no account yet?</p>
+<button class="CreateButton" style="width: 140px;padding: 0%;">Create an account</button>
 
-      <a class="icon nomore" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+    </div>
+    
+    </div>
+    <!-- main side bar of log in end -->
+
+      <a class="icon nomore" href="../html/WishList.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
           stroke="currentColor" className="size-6" class="nomore">
           <path strokeLinecap="round" strokeLinejoin="round"
             d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
         </svg> </a><div class="smallNum " id="smallNumId"><p class="nomore">0</p></div>
-
+         <!-- shopping aside -->
       <a class="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" id="carticon" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-          stroke="currentColor" className="size-6">
+          stroke="currentColor" className="size-6" onclick="openshop()">
           <path strokeLinecap="round" strokeLinejoin="round"
             d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
         </svg></a><div class="smallNum"><p>0</p></div>
+         <div id="maincart2" class="nomore">
+    <div id="signClose2"> <h2 class="font">Shopping Cart</h2> <div id="closeimg" onclick="closeshop()"><span class="meiSvg">Close</span> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" class="meiSvg" viewBox="0 0 24 24">
+<path d="M 4.4042969 3 C 3.7572969 3 3.3780469 3.7287656 3.7480469 4.2597656 L 9.7363281 12.818359 L 3.7246094 19.845703 C 3.3356094 20.299703 3.6578594 21 4.2558594 21 L 4.9199219 21 C 5.2129219 21 5.4916406 20.871437 5.6816406 20.648438 L 10.919922 14.511719 L 14.863281 20.146484 C 15.238281 20.680484 15.849953 21 16.501953 21 L 19.835938 21 C 20.482937 21 20.862187 20.272188 20.492188 19.742188 L 14.173828 10.699219 L 19.900391 3.9902344 C 20.232391 3.6002344 19.955359 3 19.443359 3 L 18.597656 3 C 18.305656 3 18.027891 3.1276094 17.837891 3.3496094 L 12.996094 9.0097656 L 9.3945312 3.8554688 C 9.0205313 3.3194687 8.4098594 3 7.7558594 3 L 4.4042969 3 z"></path>
+</svg></div></div>
+      <div id="block_cart2">
+        <div id="empty">
+           <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/EBEBEB/clear-shopping-cart.png" alt="clear-shopping-cart"/>
+         </div>
+        <p id="no_pro2">No product in the cart</p>
+        <button id="shop_button2">Return to shop</button>
+        <article>You must have an order with a minimum of<span style="color: #B09C6D;font-weight: bold;"> Rs 
+            1000 </span>to place your order, your current order total is <span
+            style="color: #B09C6D;font-weight: bold;">₨ 0</span>
+        </article>
+      </div>
+    </div>
+<!-- end aside shopping -->
 
     </div>
   </nav>
 
 <!-- nav end -->
+
 
 <!-- media query side bar -->
 <div id="mainSideBar" class="Noneed">
@@ -328,362 +374,57 @@
 </div>
 
 <!-- media query side bar end -->
-  <!-- hero big image -->
-  <div id="big_img">
-   <h1 class="font" id="bigImageMenu">Menu</h1>
-    <div id="ham2div"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/menu--v1.png" alt="menu--v1" class="Noneed" id="ham2"/><h2 id="cato" class="Noneed">Categories</h2></div>
-             
-    <div id="small_img" >
-      <div class="block_small ">
-        <a href="#">
-          <img src="https://layers.pk/wp-content/uploads/2020/11/doris-shop-icon-all.svg" alt="" ><br><br>
-          <div class="p_tag">
-            <p>All</p>
-            <p class="pro">product</p>
-          </div>
-        </a>
-      </div>
-      <div class="block_small" >
-        <a href="#">
-          <img src="../asserts/all brownie.png" alt="">
-          <div class="p_tag">
-            <p>Brownies</p>
-            <p class="pro">7 product</p>
-          </div>
-        </a>
-      </div>
 
-      <div class="block_small">
-        <a href="#">
-          <img src="../asserts/all cake.png" alt="">
-          <div class="p_tag">
-            <p>Cakes</p>
-            <p class="pro">26 product</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="block_small" id="cookie">
-        <a href="#">
-
-          <div class="p_tag">
-            <p>Cookies</p>
-            <p class="pro">8 product</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="block_small">
-        <a href="#">
-          <img src="../asserts/all cupcakes.png" alt="">
-          <div class="p_tag">
-            <p>Cupcakes</p>
-            <p class="pro">21 product</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="block_small ">
-        <a href="#">
-          <img src="../asserts/all desert.png" alt="">
-          <div class="p_tag">
-            <p>Desserts</p>
-            <p class="pro">10 product</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="block_small " id="min_donut">
-        <a href="#">
-          <img src="../asserts/Donut-.png" alt="">
-          <div class="p_tag">
-            <p>Mini Donuts</p>
-            <p class="pro">22 product</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="block_small ">
-        <a href="#">
-          <img src="../asserts/sundae.png" alt="">
-          <div class="p_tag">
-            <p>Sundae</p>
-            <p class="pro">9 product</p>
-          </div>
-        </a>
-      </div>
-
-    </div>
-
-  </div>
-  <!-- big image close -->
-
-  <!-- location section start +  content area start-->
-  <div id="hero">
-    <div id="content">
-      <div id="shopshow">
-        <!-- breadcrumbs -->
-        <ul id="breadcrumbs">
-         <li class="h"><a href="../html/home.html">Home</a></li> 
-         <li>Menu</li>
+        <!-- big image -->
+<div id="big_imge">
+    <h1 class="font" id="bigImageMenu">My account</h1>
+     <ul id="breadcrumbs">
+         <li><a href="../html/home.html">Home</a></li> 
+         <li>My account</li>
         </ul>
-        <div id="shop_show" >
-          <span class="nomore"><b>Show</b></span>
-          <span class="nomore">:</span>
-          <a href="#" class="nomore">12</a>
-          <select name="select" id="selector_show" class="nomore">
-
-            <option value="default">Default</option>
-            <option value="popularity">Sort by Popularity</option>
-            <option value="latest">Latest</option>
-            <option value="high to low">sort by Price high to low</option>
-            <option value="low to high">sort by Price low to high</option>
-
-          </select>
-        </div>
-
-      </div><br>
-
-      <div id="search_loc">
-        <p id="para">Select Location :</p>
-        <select id="loc_block" name="select">
-          <option value="islamabad - DHA 2">islamabad - DHA 2"</option>
-          <option value="Lahore-lake">Lahore-lake</option>
-          <option value="kuch">kuch</option>
-        </select>
-
-        <input type="text" value="Enter pin code/Zip code" class="pin nomore">
-        <input type="submit" value="APPLY" class="pin nomore" id="apply">
-
-      </div>
-      <!-- location section end -->
-
-      <!-- hero main images start -->
-      <div id="hero_grid">
-            <!-- full image -->
-       <div class="fullimage">
-         <div class="img_grid">
-          <div><img src="../asserts/All-Chocolate-Dreamcake-1.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
-       <!-- BIG HEART -->
-             <div id="hoverheart2">
-                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
-                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
-             </div>   
-       <!-- END BIG HEART -->
-            <div id="mainChoco">
-             <div><a href="">ALL Chocolate Dreamcake</a></div>
-             <div class="paragrid" id="cakegrid" >Cakes</div>
-             <div class="paragrid">2.5 LBS</div>
-             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
-             <div class="input_block">
-             <div class="rupee">Rs 3100</div><br>
-             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-             </div><button class="addcart">Add to Cart</button></div>
-            </div></div>
-         </div>
-         <!-- full image end -->
-
-                   <!-- full image -->
-       <div class="fullimage">
-         <div class="img_grid">
-          <div><img src="../asserts/Chocolate-Dreamcake-2.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
-       <!-- BIG HEART -->
-             <div id="hoverheart2">
-                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
-                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
-             </div> 
-       <!-- END BIG HEART -->
-            <div id="mainChoco">
-             <div><a href="">ALL Chocolate Dreamcake</a></div>
-             <div class="paragrid" id="cakegrid" >Cakes</div>
-             <div class="paragrid">2.5 LBS</div>
-             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
-             <div class="input_block">
-             <div class="rupee">Rs 3100</div><br>
-             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-             </div><button class="addcart">Add to Cart</button></div>
-            </div></div>
-         </div>
-         <!-- full image end -->
-
-                   <!-- full image -->
-       <div class="fullimage">
-         <div class="img_grid">
-          <div><img src="../asserts/Chunky-blend-3.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
-       <!-- BIG HEART -->
-             <div id="hoverheart2">
-                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
-                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
-             </div>  
-       <!-- END BIG HEART -->
-            <div id="mainChoco">
-             <div><a href="">ALL Chocolate Dreamcake</a></div>
-             <div class="paragrid" id="cakegrid" >Cakes</div>
-             <div class="paragrid">2.5 LBS</div>
-             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
-             <div class="input_block">
-             <div class="rupee">Rs 3100</div><br>
-             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-             </div><button class="addcart">Add to Cart</button></div>
-            </div></div>
-         </div>
-         <!-- full image end -->
-
-                  <!-- full image -->
-       <div class="fullimage">
-         <div class="img_grid">
-          <div><img src="../asserts/Hersheys-Chocolate-Cake-4.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
-       <!-- BIG HEART -->
-               <div id="hoverheart2">
-                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
-                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
-             </div> 
-       <!-- END BIG HEART -->
-            <div id="mainChoco">
-             <div><a href="">ALL Chocolate Dreamcake</a></div>
-             <div class="paragrid" id="cakegrid" >Cakes</div>
-             <div class="paragrid">2.5 LBS</div>
-             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
-             <div class="input_block">
-             <div class="rupee">Rs 3100</div><br>
-             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-             </div><button class="addcart">Add to Cart</button></div>
-            </div></div>
-         </div>
-         <!-- full image end -->
-
-                <!-- full image -->
-       <div class="fullimage">
-         <div class="img_grid">
-          <div><img src="../asserts/Lotus2-5.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
-       <!-- BIG HEART -->
-             <div id="hoverheart2">
-                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
-                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
-             </div> 
-       <!-- END BIG HEART -->
-            <div id="mainChoco">
-             <div><a href="">ALL Chocolate Dreamcake</a></div>
-             <div class="paragrid" id="cakegrid" >Cakes</div>
-             <div class="paragrid">2.5 LBS</div>
-             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
-             <div class="input_block">
-             <div class="rupee">Rs 3100</div><br>
-             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-             </div><button class="addcart">Add to Cart</button></div>
-            </div></div>
-         </div>
-         <!-- full image end -->
-
-             <!-- full image -->
-       <div class="fullimage">
-         <div class="img_grid">
-          <div><img src="../asserts/Lotus-Three-Milk-Cake-6.jpeg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
-       <!-- BIG HEART -->
-             <div id="hoverheart2">
-                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
-                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
-             </div>
-       <!-- END BIG HEART -->
-            <div id="mainChoco">
-             <div><a href="">ALL Chocolate Dreamcake</a></div>
-             <div class="paragrid" id="cakegrid" >Cakes</div>
-             <div class="paragrid">2.5 LBS</div>
-             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
-             <div class="input_block">
-             <div class="rupee">Rs 3100</div><br>
-             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-             </div><button class="addcart">Add to Cart</button></div>
-            </div></div>
-         </div>
-         <!-- full image end -->
-
-            <!-- full image -->
-       <div class="fullimage">
-         <div class="img_grid">
-          <div><img src="../asserts/Milk-Chocolate-7.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
-       <!-- BIG HEART -->
-              <div id="hoverheart2">
-                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
-                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
-             </div>  
-       <!-- END BIG HEART -->
-            <div id="mainChoco">
-             <div><a href="">ALL Chocolate Dreamcake</a></div>
-             <div class="paragrid" id="cakegrid" >Cakes</div>
-             <div class="paragrid">2.5 LBS</div>
-             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
-             <div class="input_block">
-             <div class="rupee">Rs 3100</div><br>
-             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-             </div><button class="addcart">Add to Cart</button></div>
-            </div></div>
-         </div>
-         <!-- full image end -->
-
-        <!-- full image -->
-       <div class="fullimage">
-         <div class="img_grid">
-          <div><img src="../asserts/Nutella-8.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
-       <!-- BIG HEART -->
-             <div id="hoverheart2">
-                <div  class="hm2 heart2"><img src="../asserts/newnew.png" id="heartImage"></div>
-                <div  class="nomore hm2 heart2"><img src="../asserts/search_39dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="magnify" class="nomore"></div>
-             </div>
-       <!-- END BIG HEART -->
-            <div id="mainChoco">
-             <div><a href="">ALL Chocolate Dreamcake</a></div>
-             <div class="paragrid" id="cakegrid" >Cakes</div>
-             <div class="paragrid">2.5 LBS</div>
-             <p class="paragrid">Light and creamy artisan chocolate icing topped with disc and sprinkled with imported cocoa on top</p><br>
-             <div class="input_block">
-             <div class="rupee">Rs 3100</div><br>
-             <div class="imgBtn"> <button type="button" value="-">-</button> <input type="text" class="inputBtn" value="1"> <button type="button" value="+">+</button>   
-             </div><button class="addcart">Add to Cart</button></div>
-            </div></div>
-         </div>
-         <!-- full image end -->
-           <!-- buttom load -->
-<div id="more">
-
-</div>
-
-
-        <!-- here main images end -->
-      
-      </div>
-     <!-- load more button -->
-      <div id="load" ><button class="nomore">Load More</button></div>
+    <div id="small_img">
+        <div class="block_small">
+        
     </div>
-    <!--  content area end -->
 
-
-    <!-- aside bar -->
-    <div id="maincart" class="nomore">
-      <span id="cart">CART</span>
-      <div id="block_cart">
-        <div id="empty">
-          <!-- <img src="../asserts/empty_cart.png" alt=""> -->
-           <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/EBEBEB/clear-shopping-cart.png" alt="clear-shopping-cart"/>
-         </div>
-        <p id="no_pro">No product in the cart</p>
-        <button id="shop_button">Return to shop</button>
-        <article>You must have an order with a minimum of<span style="color: #B09C6D;font-weight: bold;"> Rs 
-            1000 </span>to place your order, your current order total is <span
-            style="color: #B09C6D;font-weight: bold;">₨ 0</span>
-        </article>
-      </div>
+</div></div><br>
+<!-- big image end -->
+ <!-- mainlog section -->
+  <div id="mainLog">
+    <!-- block 1 -->
+    <div id="login">
+      <h2 class="font">Login</h2>
+         <label class="lableli">Username </label>
+        <input type="text" class="inputText" autocomplete="on" >
+       
+         <label class="lableli">Password </label><input type="password"  class="inputText" autocomplete="on"> 
+          
+     <div id="passblock">  <div id="div"><input type="checkbox" autocomplete="on"> Remember me </div><span class="lostPass"  >lost your password?</span> </div>
+        <button class="loginButton">Log in</button>
     </div>
-<!-- end aside bar -->
-
+    <div id="separator"><hr><p>or</p><hr></div>
+    <!-- register section -->
+    <div id="register">
+  <h2 class="font">Register</h2>
+          <label class="lableli">Email address </label>
+        <input type="text" class="inputText" autocomplete="on">
+       
+         <label class="lableli">Password </label><input type="password"  class="inputText" autocomplete="on"> 
+          
+     <div id="passblock"> <p id="paraRegist">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <span class="colorChanger">Privacy policy.</span> </p></div>
+        <button class="loginButton" style="width: 100px; text-align: center;">Register</button>
+    </div>
   </div>
-<!-- end hero section -->
+   
+
+  <!-- main log section end -->
+   
 <!-- footer start -->
   <footer>
     <div id="foot">
 
 
-      <p>© 2024 <span id="colorChanger">Layers Bakeshop</span> | Powered by <a href="#">MATZ Solutions</a></p>
+      <p class="powerBy">© 2024 <span class="colorChanger" >Layers Bakeshop</span><p class="powerBy"> Powered by  <a href="#">MATZ Solutions </p></a></p>
       <div id="footIcon"> 
    <div class="same">
  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="footing" width="50" height="50" viewBox="0,0,256,256"
@@ -703,26 +444,104 @@ style="fill:#FFFFFF;">
     <path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path>
 </svg>
 </div>
-      </div>
-
-
+     
     </div>
+  
+    </div>
+
   </footer>
+
 <!-- end footer -->
-<script >
-    function blackClick(){
-   //    let  black=document.getElementById('fullBlack');
-    //   black.addEventListener(onclick,()=>{
-        closeshop();
-   //       let cart=document.getElementById('maincart2')
-      //  cart.style.right='-500px';
-      //   cart.style.transition='all 1s ease-in'
-      //   black.style.display='none';
-      //   console.log("i think i am working")
-   //    })
+
+<script>
+    function openperson(){
+        let logfull=document.getElementById('log')
+        logfull.style.display='flex'
+        logfull.style.right='-10px';
+        logfull.style.transition='all 1s ease-in'
+         let  black=document.getElementById('fullBlack');
+       black.style.display='block';
+       black.style.backgroundColor='rgba(0, 0, 0, 0.7)'
+       black.style.opacity='0.7';
+
+    }
+    function closePerson(){
+      let logfull=document.getElementById('log')
+        logfull.style.right='-500px';
+         let person=document.getElementById('iam')
+        person.style.display='block'
+         let  black=document.getElementById('fullBlack');
+       black.style.display='none';
+    }
+
+    function sideQueryOpen(){
+      let querySide=document.getElementById('mainSideBar')
+       querySide.style.left='0%';
+        querySide.style.transition='all 1s ease-in'
+        let  black=document.getElementById('fullBlack');
+       black.style.display='block';
+       black.style.backgroundColor='rgba(0, 0, 0, 0.7)'
+       black.style.opacity='0.7';
       
-    }</script>
+    }
+     function sideQueryclose(){
+      console.log("i am close")
+      let querySide=document.getElementById('mainSideBar')
+       querySide.style.left='-100%'
+        querySide.style.transition='all 1s ease-in'
+        let  black=document.getElementById('fullBlack');
+       black.style.display='none';
+      }
+    
+   // if(openperson()){
+    //  console.log("i am open")
+    //  let bodySt=document.getElementById('bodySt')
+    //  bodySt.addEventListener(onclick,()=>{
+    //    let logfull=document.getElementById('log')
+    //     logfull.style.right='-500px';
+    //      let person=document.getElementById('iam')
+    //     person.style.display='block'
+    // }
+
+    
+</script>
+<script>
+     function openshop(){
+      let cart=document.getElementById('maincart2')
+     cart.style.transition='all 0.5s ease-in'
+     cart.style.display='block'
+    cart.style.right='-15%';
+      let  black=document.getElementById('fullBlack');
+       black.style.display='block';
+       black.style.backgroundColor='rgba(0, 0, 0, 0.7)'
+       black.style.opacity='0.7';
+       black.style.height='200%'
+    }
+     function closeshop(){
+       let cart=document.getElementById('maincart2')
+        cart.style.right='-500px';
+        cart.style.transition='all 1s ease-in'
+       let  black=document.getElementById('fullBlack');
+       black.style.display='none';
+    }
+    
+   
+    function blackClick(){
+  if (openshop){
+        closeshop();}
+    if(sideQueryOpen){
+          sideQueryclose()
+        }
+  if(openperson){
+    closePerson();
+  }
+      
+    }
+    
+  
+
+
+</script>
 
 </body>
-
 </html>
