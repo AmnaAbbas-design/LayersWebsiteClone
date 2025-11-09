@@ -1,0 +1,16 @@
+{
+       "users":[
+        {
+            "name":"amna",
+            "age":20,
+            "class":"3rdsem"
+        },
+         {
+            "name":"amna",
+            "age":20,
+            "class":"3rdsem"
+        }
+       
+       ]
+       
+}

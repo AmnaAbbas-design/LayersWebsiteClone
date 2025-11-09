@@ -1,0 +1,16 @@
+span{
+    color:red;
+    font-size: 12;
+    display: none;
+}
+input:invalid+span{
+    display: block;
+}
+#mainContainer{
+    color: black;
+    width: 500px;
+    background-color: aliceblue;
+    height: 500px;
+    justify-content: space-around;
+    display: flex;
+}

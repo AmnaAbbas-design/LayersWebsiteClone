@@ -27,19 +27,13 @@ body{
     height: 100%;
    font-family: "Heebo", sans-serif;
    overflow-x: hidden;
+   margin: 0%;
+   padding: 0%;
+     
+     
 }
  
-/* full black */
- #fullBlack{
-   background-color: rgba(0, 0, 0, 0.801);
-   opacity:0.7;
-   height: 100%;
-   width: 100vw;
-   position: absolute;
-   
-   /* display: none; */
-} 
-/* full black end */
+
 
 nav{
     display: flex;
@@ -47,11 +41,26 @@ nav{
     align-items: center;
       background-color:rgb(238, 238, 238,0.90);
       height: 60px;
-      position: fixed;
+      position:fixed;
       width: 100%; 
-      z-index: 100;
+    z-index: 200;
       
 }
+/* full black */
+ #fullBlack{
+   background-color: rgba(0, 0, 0, 0.7);
+   opacity:0.7;
+   width: 100vw;
+   position: fixed;
+   z-index: 600;
+   display: none;
+} 
+/* full black end */
+/* power by p */
+.powerBy{
+    display: inline;
+}
+
 .big{
     background-color: #B09C6D;
     height: 100px;
@@ -66,20 +75,23 @@ nav{
 #logo{
 width: 10vw;}
 
+
 #loc{
-  
- color: #FFFFFF;
+    color: #FFFFFF;
     font-size: 15px;
     font-weight: normal;
     width: 220px;
-    height: 25px;
+    height: 45px;
     background-color: #B09C6D;
-    margin-top: 3px;
-    padding-top: 15px;
     border-radius: 20px;
     text-align: center;
    font-weight: 500px;
    margin-left: 10px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
 }
 
 
@@ -118,14 +130,15 @@ svg{
 }
 #mainSideBar{
     position: fixed;
-    z-index: 100;
+    z-index: 900;
     background-color: #ffffff;
     width: 300px;
     position: fixed;
     height: 100%;
     overflow: scroll;
     overflow-x: hidden;
-    
+     left: -100%;
+     cursor:pointer;
    /* here amna.................. */
 }
 .smallNum{
@@ -346,8 +359,13 @@ h1{
 #menu_hover:hover{
     display: block;
 }
-
-
+/* transition scale for menu */
+#menusmall{
+    overflow: hidden;
+}
+#scale:hover{
+    transform: scaleX(1.2);
+}
 #menu_grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -376,6 +394,7 @@ h1{
     display: flex;
     align-items: center;
     flex-direction: column;
+    
    
     
 }
@@ -548,6 +567,7 @@ position: absolute;
  .fullimage:hover .heart2{
     display: flex;
     visibility: visible;
+   
  }
 
 
@@ -573,7 +593,7 @@ position: absolute;
  #mainChoco{
     position: relative;
     top: 120px;
-    margin-top: 15px;
+
 } 
  
 .heart2 img{
@@ -586,6 +606,7 @@ position: absolute;
 }
 .fullimage{
     height: 620px;
+  
 }
 
  
@@ -700,6 +721,7 @@ position: absolute;
 .img_grid img{
     width: 90%;
     height: 350px;
+  
 }
 .fullimage{
     height: 800px;
@@ -794,20 +816,18 @@ article{
     padding-block: 1px;
     padding-right: 10px;
     border: none;
-    margin-left: 10px;
-
-    
+    margin-left: 10px;  
 }
 
 #para{
-    width: 130px;
-    height: 60px;
+    
+    margin: 0px 20px;
     color:#686464;
-      display: inline-block;
-font-size: larger;
-   padding-top: 8px;
+    
+font-size: x-large;
+   
 font-weight:500;
-padding-left: 50px;
+text-align: center;
 
 
 }
@@ -939,49 +959,438 @@ display: block;
     line-height: 1.2;
     font-weight: 700;
 }
+
+/* adder counter st */
 .imgBtn button{
 width: 20px;
 height: 20px;
 border-radius: 50%;
-  color: #686464;
+color: #686464;
 background-color: transparent;
 font-weight: 300;
 font-size: 20px;
 border: none;
-
+cursor: pointer;
 }
 .inputBtn {
-width: 30px;
-height: 40px;
+width: 35px;
+height: 45px;
 border-radius: 50%;
-background-color:#e2e0e0;
+   background-color: rgba(187, 187, 187, 0.15);
 border: none;
 color: #686464;
-padding-left: 19px;
- 
- 
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: larger;
 }
+.inputBtn::-webkit-outer-spin-button,
+.inputBtn::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.imgBtn{
+    display: flex;
+    align-items: center;
+}
+/* Adder counter end */
+
+/* side bars st */
+/* side bar of login */
+#signClose{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+#log{
+   
+    width: 300px;
+    height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+    position: absolute;
+    right: 0%;
+    top: -29%;
+    transition: all 1s ease-in;
+    background-color: #FFFFFF;
+    z-index: 800;
+    overflow-y: hidden;
+    display: none;
+    padding-top: 20px;
+
+
+}
+#passblock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#div{
+   
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+}
+.loginButton{
+      
+    background-color: #B09C6D;
+    color: #FFFFFF;
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    box-sizing: border-box;
+   height: 40px;
+   width: 80px;
+   border: none;
+  
+
+}
+.svgperson{
+    height: 100px;
+    color:#cfcaca;
+}
+#mainNoAccount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 1px solid rgba(119, 119, 119, 0.2);
+    margin:20px 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(119, 119, 119, 0.2);
+    
+}
+#divLogSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.CreateButton{
+     background-color: #B09C6D;
+    color: #FFFFFF;
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    box-sizing: border-box;
+    border: none;
+    height: 35px;
+    width: 150px;
+}
+.lostPass{
+    color: #B09C6D;
+    width: 155px;
+}
+#closeimg{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#closeimg:hover .meiSvg{
+    fill: #777777;
+    color: #777777;
+}
+
+
+label{
+     color: #333333;
+    font-size: 16px;
+}
+.userinput{
+    width: 300px;
+    height: 42px;
+    background-color:rgba(187, 187, 187, 0.15);
+    border: none;
+     font-size: 16px;
+    color: #777777;
+    text-indent: 20px;
+}
+.userinput:focus{
+    outline: none;
+}
+/* side bar of login close */
+
+/* aside shopping */
+#maincart2{
+max-width: 350px;
+padding: 10px;
+margin-top: 5px;
+background-color: #FFFFFF;
+position: absolute;
+top: -43%;
+right:-100%;
+transition: all 1s ease-in;
+display: none;
+height: 100vh;
+z-index: 900}
+#block_cart2{
+    border-top: 1px solid rgba(119, 119, 119, 0.2);
+    margin: 10px;
+}
+#closeimg2{
+    text-align: center;
+    display: flex;
+    padding-right: 25px;
+
+}
+#closeimg2:hover .meiSvg{
+    fill: #777777;
+    color: #777777;
+}
+
+
+#shop_button2{
+    color: #FFFFFF;
+    background-color: #B09C6D;
+     padding: 10px 5px 10px 5px;
+     font-weight: 700;
+     margin-bottom: 15px;
+     margin-top: 5px;
+     font-size: 12px;
+     border: none;
+}
+#no_pro2 {
+    font-weight:lighter;
+    font-family: sans-serif;
+    font-weight: 600; 
+    margin: 20px 0px;
+    
+}
+#signClose2{
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+    margin: 20px 0px;
+}
+
+#cart2{
+    font-weight: 800;
+    font-size: 16px;
+   
+}
+#block_cart2{
+    width: 300px;
+    height: 455px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  
+    
+}
+article{
+    color:#777777;
+    font-size: 16px;
+    line-height: 1.5;
+   width: 290px;
+    margin-top: 10px;
+
+}
+#closeBlock2{
+    display: flex;
+    justify-content: space-between;
+}
+/* shopping aside end .................................................................*/
+
+/* media tury */
+
+@media(max-width:600px) {
+    .Noneed{
+     display: block;
+ }
+ 
+ .nomore{
+    display: none;
+ }
+    body{
+        width: 100%;
+    }
+     nav{
+display: flex;
+align-items: stretch;
+justify-content: space-between;
+    }
+    #loc{
+        display: none;
+    }
+#small_img{
+display: flex;
+flex-direction: column;
+}
+    
+    #bigImageMenu{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 100px;
+        font-size: 30px;
+    }
+    .cen{
+        display: block;
+       
+    
+    }
+    
+  .block_small{
+    display: none;
+  }  
+  #ham2{
+    height: 20px;
+    padding: 5px;
+  }
+  #ham2div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ #ham2:active .block_small{
+    display: block;
+ }   
+  #big_img{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border: solid;
+    }
+    #big_imge{
+        height: 229px;
+     width:100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+}
+#cato{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px;
+    
+ }
+ #myHamburger{
+
+    width: 60px;
+     display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+ }
+ #myHamburger svg{
+    cursor: pointer;
+ }
+  .Hamburger:active #mainSideBar{
+display: block;
+}
+    
+    #logo{
+        width: 150px;
+        margin-left: 55px;
+    }
+ 
+    #icons{
+        padding: 0%;
+        justify-content: flex-end;
+        padding-right: 15px;
+        width: 40px;
+        height: 30px;
+        align-items: flex-end;
+        margin-top: 10px;
+    }
+    .smallNum{
+       right: 10px;
+    }
+    #big_img{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 300px;
+        
+    }
+#searchSection{
+    display: flex;
+    border-bottom: 1px solid #77777733;
+    align-items: center;
+    
+}
+#serser{
+    height: 70px;
+    font-weight: 600;
+    font-size: 15px;   
+}
+
+#ser{
+    padding-right: 10px;
+    display: inline;
+    
+}
+
+.sideSmall{
+    border-bottom: 1px solid #77777733;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+#blockSideBar div{
+   background-color: white;
+   font-size: 12px;
+   font-weight: 550;
+      line-height: 5;
+    font-family: "Heebo";
+    padding-left: 10px;
+}
+#blockSideBar input{
+    width: 100%;
+    border: none;
+}
+
+.fog{
+  font-family: 'foglightenno07.regular'; 
+  font-weight: 700;  
+
+}
+.dropdrop{
+    display: none;
+}
+#smallNumId{
+    display: none;
+}
+
+/* main cart */
+#maincart2{
+width: 300px;
+
+}
+
+}
+/* sidebar end */
 #cakegrid{
     font-size: 14px;
 }
 .paragrid{
     color: #686464;
-    line-height: 2;
+    line-height: 1.9;
+    
 }
 .paranew{
  color: #686464;
     line-height: 4;
     font-size: 20px;
 }
-.imgBtn{
-
-
-display: inline-block;
-width: 100px;
-
-}
 .input_block{ 
-    height: 100px;
+    
+    display: flex;
+    justify-content: space-between;
 }
  .rupee{
      color: #B09C6D;
@@ -992,10 +1401,9 @@ width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 30px;
-     margin-bottom: 40px;
-
+    height: 80px;
+    
+    
  }
  #load button{
   color: #333333;
@@ -1004,8 +1412,11 @@ width: 100px;
   background-color: transparent;
   font-weight: 700;
  border: 1px solid #77777733;
+ cursor: pointer;
  } 
-  
+  #more{
+    display: none;
+  }
  #colorChanger{
     color: #B09C6D;
     font-weight: 700;
@@ -1057,6 +1468,19 @@ footer{
     margin-right: 5px;
     margin-top: 5px;
 }
+button{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #b09c6d; 
+    padding: 5px 20px;
+    cursor: pointer;
+    border: none;
+   transition: all 0.25 ease;
+} 
+/* button:hover{
+ background-color:#947b3f
+} */
 #LogoFace{
 position: relative;
 

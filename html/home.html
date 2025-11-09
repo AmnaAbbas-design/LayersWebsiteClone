@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
-<body>
-  
- <!-- nav start -->
+
+  <body id="bodySt">
+   
+<!-- nav start -->
   <nav>
+     <div id="fullBlack" onclick="blackClick()"></div> 
     <!-- query hamburger -->
-    <div id="myHamburger" class="Noneed" > <svg xmlns="http://www.w3.org/2000/svg" class="hamburger Noneed"  x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+    <div id="myHamburger" class="Noneed" > <svg xmlns="http://www.w3.org/2000/svg" class="hamburger Noneed" id="hamburgersvg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24" onclick="sideQueryOpen()" >
 <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path>
 </svg></div>
 <!-- hamburger end -->
@@ -151,7 +153,7 @@
       </div></div>
 <!--menu  -->
 
-      <a href="./index.html" class="anchor" id="menu_anchor">
+      <a href="../html/index.html" class="anchor" id="menu_anchor">
         <li class="nomore">Menu</li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdUlEQVR4nO3NwQnCAAxG4c9xPAgWoah4sUIpoiJ0MldwIqdQqUsUIR4UtS096ruEJP9L+PPgiJV2ZJF/YoEbtg1yHrnlu+UcFXYf5AJXzL59mOCC/ct8HfJUCxKcUUa/CTnVgXEcOUS9950Z4oSRHgz6yH6EGoCbERduBT22AAAAAElFTkSuQmCC" alt="expand-arrow" class="dropdrop" >
       </a>
 
@@ -205,11 +207,11 @@
         </div>
 
       </div>
-      </div>
+     
 
       <!-- about us -->
 
-      <a href="#" class="anchor" id="about_anchor">
+      <a href="../html/About.html" class="anchor" id="about_anchor">
         <li class="nomore" >About Us</li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdUlEQVR4nO3NwQnCAAxG4c9xPAgWoah4sUIpoiJ0MldwIqdQqUsUIR4UtS096ruEJP9L+PPgiJV2ZJF/YoEbtg1yHrnlu+UcFXYf5AJXzL59mOCC/ct8HfJUCxKcUUa/CTnVgXEcOUS9950Z4oSRHgz6yH6EGoCbERduBT22AAAAAElFTkSuQmCC" alt="expand-arrow" class="dropdrop" >
       </a>
       <!-- about hover -->
@@ -217,14 +219,14 @@
         <div id="about_flex">
           <div><img src="../asserts/mob 1.jpg" alt="" class="mob"></div>
           <div><img src="../asserts/mob 2.jpg" alt="" class="mob"></div>
-          <div>
+          <div id="aboutH1Div" >
             <h1><span class="layerspan">Layers</span> Bakeshop</h1>
             <p id="mob_p" class="paranew">Like a fantasy that feels unreal, every delicacy by ‘Layers’ holds a charm that enchants with
               every bite, allowing one to be swept into a moment of bliss, making all your dessert creams come true!
-
+              <br><br>
               Founded in Lahore in 2020, the philosophy of Layers Bakeshop was simple; to create connections through
               desserts while striking the ideal balance between flavor and feeling.  
-
+               <br><br>
               Since the beginning, Layers has secured an irreplaceable spot in the hearts of people.</p>
           </div>
 
@@ -270,28 +272,110 @@
         </svg></a>
 
       <a class="icon nomore" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-          stroke="currentColor" className="size-6" class="nomore">
+          stroke="currentColor" className="size-6" class="nomore"  height="32px" id="iam"  onclick="openperson()">
           <path strokeLinecap="round" strokeLinejoin="round"
             d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
         </svg></a>
+        
+    <!-- mainlog section of sidebar of login-->
+    <!-- block 1 -->
+    <div id="log">
+      <div id="divLogSection"> <div id="signClose"> <h2 class="font">Sign in</h2> <div id="closeimg" onclick="closePerson()"><span class="meiSvg">Close</span> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" class="meiSvg" viewBox="0 0 24 24">
+<path d="M 4.4042969 3 C 3.7572969 3 3.3780469 3.7287656 3.7480469 4.2597656 L 9.7363281 12.818359 L 3.7246094 19.845703 C 3.3356094 20.299703 3.6578594 21 4.2558594 21 L 4.9199219 21 C 5.2129219 21 5.4916406 20.871437 5.6816406 20.648438 L 10.919922 14.511719 L 14.863281 20.146484 C 15.238281 20.680484 15.849953 21 16.501953 21 L 19.835938 21 C 20.482937 21 20.862187 20.272188 20.492188 19.742188 L 14.173828 10.699219 L 19.900391 3.9902344 C 20.232391 3.6002344 19.955359 3 19.443359 3 L 18.597656 3 C 18.305656 3 18.027891 3.1276094 17.837891 3.3496094 L 12.996094 9.0097656 L 9.3945312 3.8554688 C 9.0205313 3.3194687 8.4098594 3 7.7558594 3 L 4.4042969 3 z"></path>
+</svg></div></div>
+      
+        <label class="lableli" id="hrline">Username or email</label>
+        <input type="text" class="userinput" autocomplete="on">
+       
+         <label class="lableli">Password</label><input type="password"  class="userinput" autocomplete="on"> 
+          
+     <div id="passblock">  <div id="div"><input type="checkbox"> Remember me </div><span class="lostPass">lost your password?</span> </div>
+        <button class="loginButton">Log in</button></div>
+    
+    <div id="mainNoAccount">
+   <img width="100" height="100" src="https://img.icons8.com/pastel-glyph/100/EBEBEB/person-male--v2.png" alt="person-male--v2"/>
+<p>no account yet?</p>
+<button class="CreateButton" style="width: 140px;padding: 0%;">Create an account</button>
 
-      <a class="icon nomore" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+    </div>
+    
+    </div>
+    <!-- main side bar of log in end -->
+
+      <a class="icon nomore" href="../html/WishList.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
           stroke="currentColor" className="size-6" class="nomore">
           <path strokeLinecap="round" strokeLinejoin="round"
             d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
         </svg> </a><div class="smallNum " id="smallNumId"><p class="nomore">0</p></div>
-
+         <!-- shopping aside -->
       <a class="icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" id="carticon" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-          stroke="currentColor" className="size-6">
+          stroke="currentColor" className="size-6" onclick="openshop()">
           <path strokeLinecap="round" strokeLinejoin="round"
             d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
         </svg></a><div class="smallNum"><p>0</p></div>
+         <div id="maincart2" class="nomore">
+    <div id="signClose2"> <h2 class="font">Shopping Cart</h2> <div id="closeimg" onclick="closeshop()"><span class="meiSvg">Close</span> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" class="meiSvg" viewBox="0 0 24 24">
+<path d="M 4.4042969 3 C 3.7572969 3 3.3780469 3.7287656 3.7480469 4.2597656 L 9.7363281 12.818359 L 3.7246094 19.845703 C 3.3356094 20.299703 3.6578594 21 4.2558594 21 L 4.9199219 21 C 5.2129219 21 5.4916406 20.871437 5.6816406 20.648438 L 10.919922 14.511719 L 14.863281 20.146484 C 15.238281 20.680484 15.849953 21 16.501953 21 L 19.835938 21 C 20.482937 21 20.862187 20.272188 20.492188 19.742188 L 14.173828 10.699219 L 19.900391 3.9902344 C 20.232391 3.6002344 19.955359 3 19.443359 3 L 18.597656 3 C 18.305656 3 18.027891 3.1276094 17.837891 3.3496094 L 12.996094 9.0097656 L 9.3945312 3.8554688 C 9.0205313 3.3194687 8.4098594 3 7.7558594 3 L 4.4042969 3 z"></path>
+</svg></div></div>
+      <div id="block_cart2">
+        <div id="empty">
+           <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/EBEBEB/clear-shopping-cart.png" alt="clear-shopping-cart"/>
+         </div>
+        <p id="no_pro2">No product in the cart</p>
+        <button id="shop_button2">Return to shop</button>
+        <article>You must have an order with a minimum of<span style="color: #B09C6D;font-weight: bold;"> Rs 
+            1000 </span>to place your order, your current order total is <span
+            style="color: #B09C6D;font-weight: bold;">₨ 0</span>
+        </article>
+      </div>
+    </div>
+<!-- end aside shopping -->
 
     </div>
   </nav>
 
 <!-- nav end -->
+
     
+<!-- media query side bar -->
+<div id="mainSideBar" class="Noneed" >
+  <div id="blockSideBar">
+  <div id="searchSection"> <input type="search" id="serser" placeholder="Search for products"><svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24"
+          strokeWidth={1.5} stroke="currentColor" className="size-6" id="ser">
+          <path strokeLinecap="round" strokeLinejoin="round"
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg></div>
+   <div class="sideSmall">Home</div>
+    <div class="sideSmall">Menu</div>
+     <div class="sideSmall">About us</div>
+      <div class="sideSmall" id="divDropSocial">Social Media
+             <div class="socialDrop">Facebook</div>
+             <div class="socialDrop">Instagram</div>
+             <div class="socialDrop">youTube</div>
+      </div>
+       <div class="sideSmall">Video Catalogue</div>
+        <div class="sideSmall">Track Order</div>
+         <div class="sideSmall"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+          stroke="currentColor" className="size-6" >
+          <path strokeLinecap="round" strokeLinejoin="round"
+            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+        </svg> Wishlist  </div>
+          <div class="sideSmall"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+          stroke="currentColor" className="size-6" >
+          <path strokeLinecap="round" strokeLinejoin="round"
+            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg>Login / Register</div>
+          <div class="sideSmall"><p class="fog">Archives</p></div>
+            <div class="color">No archives to show</div>
+            <div class="sideSmall"><p class="fog">Categories</p></div>
+            <div class="color">No categories</div>
+
+           </div>
+
+  </div>
+</div>
+
+<!-- media query side bar end -->
     <div id="mainContent">
       <!-- swipper start -->
     <div class="swiper mySwiper">
@@ -387,7 +471,7 @@
          <!-- full image end -->
 
          <!-- full image -->
-       <div class="fullimage">
+       <div class="fullimage nomore">
          <div class="img_grid">
           <div><img src="../asserts/Lotus-15.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
        <!-- BIG HEART -->
@@ -414,7 +498,7 @@
 <!-- hero 3 end -->
 <!-- hero 4 -->
  <div id="hero4">
-<div id="hero3img"><img src="../asserts/New folder/bigger 4.jpg" alt="" id="bigger4"></div>
+<div id="hero3img nomore"><img src="../asserts/New folder/bigger 4.jpg" alt="" id="bigger4" class="nomore"></div>
 <div id="hero4element">
   <h4 id="layershop">Best Selling <span class="layerspan">Cakes</span></h4>
   <div id="mainHero3Hovers">
@@ -441,7 +525,9 @@
          <!-- full image end -->
 
          <!-- full image -->
-       <div class="fullimage">
+       <div class="fullimage nomore
+       
+       ">
          <div class="img_grid">
           <div><img src="../asserts/Apple-pie-1-43.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
        <!-- BIG HEART -->
@@ -468,7 +554,7 @@
 <!-- hero 4 end -->
  <!-- hero5 start -->
   <div id="hero5">
-<div id="hero3img"><img src="../asserts/New folder/bigger5.jpg" alt="" id="bigger5"></div>
+<div id="hero3img"><img src="../asserts/New folder/bigger5.jpg" alt="" id="bigger5" class="nomore"></div>
 <div id="hero4element">
   <h4 id="layershop">Best Selling <span class="layerspan">Cakes</span></h4>
   <div id="mainHero3Hovers">
@@ -495,7 +581,7 @@
          <!-- full image end -->
 
          <!-- full image -->
-       <div class="fullimage">
+       <div class="fullimage nomore">
          <div class="img_grid">
           <div><img src="../asserts/New folder/Swiss-dark-chocolate-1--5.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
        <!-- BIG HEART -->
@@ -522,7 +608,7 @@
   <!-- hero 5 end -->
    <!-- hero 6 start -->
   <div id="hero6">
-<div id="hero3img"><img src="../asserts/New folder/bigger6.jpg" alt="" id="bigger6"></div>
+<div id="hero3img"><img src="../asserts/New folder/bigger6.jpg" alt="" id="bigger6" class="nomore"></div>
 <div id="hero6element">
   <h4 id="layershop">Best Selling <span class="layerspan">Cakes</span></h4>
   <div id="mainHero3Hovers">
@@ -549,7 +635,7 @@
          <!-- full image end -->
 
          <!-- full image -->
-       <div class="fullimage">
+       <div class="fullimage nomore">
          <div class="img_grid">
           <div><img src="../asserts/New folder/smallimg 2--6.jpg" alt=""  class="homedrop2"  id="hmrelative2"></div> 
        <!-- BIG HEART -->
@@ -686,6 +772,6 @@ style="fill:#FFFFFF;">
       },
     });
   </script>
-
+<script src="../javaScript/script.js"></script>
 </body>
 </html>
